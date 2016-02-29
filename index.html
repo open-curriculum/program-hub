@@ -1,21 +1,41 @@
- <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+---
+layout: default
+---
+<div class="card z-depth-2">
+  <h1 class="header center orange-text">{{ site.title }}</h1>
+  <div class="row center">
+    <h5 class="header col s12 light">{{ site.description }}</h5>
+  </div>
+</div
+  <div class="section">
+    <!--   Icon Section   -->
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="icon-block">
+          <h5 class="center">Hi.</h5>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+          <p class="light">Hello, the longer version of hi.</p>
+        </div>
+      </div>
 
-    <body>
-    	<div>
-    		Hello.
-    	</div>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-    </body>
-  </html>
+      <div class="col s12 m6">
+        <div class="icon-block">
+          <h5 class="center">Materialize.css</h5>
+          <p class="light">Materialize.css is a modern responsive front-end framework based on Material Design</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="row center">
+          <a href="http://jekyllrb.com/" id="download-button" class="btn-large waves-effect waves-light orange">Get Jekyll</a>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Materialize</a>
+        </div>
+      </div>
+    </div>
+  <br><br>
+</div>
