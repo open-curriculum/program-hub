@@ -1,18 +1,16 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Program Hub
+email: open-curriculum@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Program Hub description.
 baseurl: /program-hub # the subpath of your site, e.g. /blog/
 url: "http://www.open-curriculum.org/program-hub/" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
-google_play: 'GDGX'
-google_plus_com: '109485346959707049693'  # Community link
-google_plus_per: '+GDGManagua'  #Personal link
-facebook_app_id: 12345
+twitter_username: 
+github_username:  open-curriculum
+google_play: 
+google_plus_com:   # Community link
+google_plus_per:   #Personal link
+facebook_app_id: 
 
 # Layout settings
 header_type: default  # values [ drawer, default ]
@@ -30,8 +28,8 @@ more_vert:
     name: Cool Option 3
     link: www.myawesomelink.com
 
-disqus: true
-disqus_shortname: 'gdgmanagua'
+disqus: false
+disqus_shortname: 
 
 # Build settings
 markdown: kramdown
