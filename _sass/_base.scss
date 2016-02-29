@@ -1,9 +1,3 @@
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
@@ -50,6 +44,7 @@ pre {
     }
 }
 
+
 /**
  * Clearfix
  */
@@ -62,6 +57,8 @@ pre {
     }
 }
 
+
+
 /**
  * Icons
  */
@@ -73,8 +70,8 @@ pre {
         height: 16px;
         vertical-align: middle;
 
-        path {
-            fill: $grey-color;
-        }
+        // path {
+        //     fill: $grey-color;
+        // }
     }
 }

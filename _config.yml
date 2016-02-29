@@ -1,35 +1,9 @@
 # Site settings
-title: Program Hub
-email: open-curriculum@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Program Hub description.
-baseurl: /program-hub # the subpath of your site, e.g. /blog/
-url: "http://www.open-curriculum.org/program-hub/" # the base hostname & protocol for your site
-twitter_username: 
-github_username:  open-curriculum
-google_play: 
-google_plus_com:   # Community link
-google_plus_per:   #Personal link
-facebook_app_id: 
-
-# Layout settings
-header_type: default  # values [ drawer, default ]
-post_type: highlight    # values [ highlight, default ]
-pagination_type: default  # values [ ops, default ]
-
-more_vert:
-  option1:
-    name: Cool Option 1
-    link: www.myawesomelink.com
-  option2:
-    name: Cool Option 2
-    link: www.myawesomelink.com
-  option3:
-    name: Cool Option 3
-    link: www.myawesomelink.com
-
-disqus: false
-disqus_shortname: 
+title: Jekyll + Materialize = <3
+description: "Just when you didn't think Jekyll could get any better, it got materialized."
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+destination: ../site/
+baseurl: /program-hub
 
 # Build settings
 markdown: kramdown
