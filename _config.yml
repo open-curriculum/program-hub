@@ -1,8 +1,12 @@
 # Site settings
-title: Jekyll + Materialize = <3
-description: "Just when you didn't think Jekyll could get any better, it got materialized."
+title: Program Hub Prototyping.
+description: "Just some prototyping. Nothing to see here."
 url: "http://www.open-curriculum.org" # the base hostname & protocol for your site
 baseurl: /program-hub
-
+permalink: pretty
 # Build settings
 markdown: kramdown
+collections:
+  exhibitions:
+    output: true
+    permalink: /exhibitions/:title.html
