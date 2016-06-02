@@ -9,7 +9,7 @@
 @import 'foundation';
 
 // Include All of Foundation 6
-@include foundation-everything;
+@include foundation-everything(true);
 
 // Customize Foundation 6. Uncomment the components you need:
 
