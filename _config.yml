@@ -49,5 +49,5 @@ site_phone:         (555) 555-1234
 # Assets
 # We specify the directory for Jekyll so we can use @imports.
 sass:
-  sass_dir:          ./assets/stylesheets
+  sass_dir:          assets/stylesheets
   style:            :compressed
