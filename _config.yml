@@ -1,4 +1,4 @@
-title:              Foundation-Jekyll
+title:              DMD
 
 # Versioning
 current_version: 1.5.0
@@ -51,3 +51,22 @@ site_phone:         (555) 555-1234
 sass:
   sass_dir:          ./assets/stylesheets
   style:            :compressed
+
+                
+ #  _   _     __      _______ _____       _______ _____ ____  _   _ 
+ # | \ | |   /\ \    / /_   _/ ____|   /\|__   __|_   _/ __ \| \ | |
+ # |  \| |  /  \ \  / /  | || |  __   /  \  | |    | || |  | |  \| |
+ # | . ` | / /\ \ \/ /   | || | |_ | / /\ \ | |    | || |  | | . ` |
+ # | |\  |/ ____ \  /   _| || |__| |/ ____ \| |   _| || |__| | |\  |
+ # |_| \_/_/    \_\/   |_____\_____/_/    \_\_|  |_____\____/|_| \_|
+
+#Navigation
+menuitems:
+  - url: /program-hub/
+    title: Home
+  - url: /program-hub/about/
+    title: About
+  - url: /program-hub/faculty/
+    title: Faculty
+  - url: /program-hub/contact/
+    title: Contact Us

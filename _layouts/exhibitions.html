@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="home">  
+  <h1 class="page-heading">Exhibition Name</h1>
+     <div class="row">
+        <div class="col s12">
+
+    {% for exhibition in site.exhibitions %}
+         <div class="col s6 {{ exhibition.class }}">
+         <div class="card medium hoverable z-depth-raised">
+          <div class="card-image">
+            <img src="{{ exhibition.card-image-url }}">
+            <span class="card-title">{{ exhibition.title }}</span>
+          </div>
+          <div class="card-content">
+            <p>{{ exhibition.card-description }}</p>
+            
+          </div>
+          <div class="card-action">
+            <a href="{{ exhibition.url | prepend: site.baseurl }}">{{ exhibition.title }}</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+
+
+
+        </div>
+    </div>
+
