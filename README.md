@@ -28,6 +28,10 @@ Clone the repo and start building your site:
  git clone git@github.com:aaronkwhite/foundation-jekyll.git foundation-jekyll
 ```
 
+```
+bundle install
+```
+
 The core components are located in the *source* directory, so you can better organize your content and structure.
 
 ```
@@ -87,10 +91,6 @@ We're using [Foundation][1] & Font-Awesome [Sass][3] Sass compiled by Jekyll aut
 The primary stylesheet '/assets/stylessheets/style.scss' file is configured to include all necessary files for Foundation, Font-Awesome and your custom styles, just add your custom styles to '/assets/stylesheets/_theme.scss'.
 
 To test your site locally just run:
-
-```
-bundle install
-```
 
 ```
 jekyll serve
