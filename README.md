@@ -1,67 +1,119 @@
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=Phlow&url=https://github.com/Phlow/feeling-responsive&title=Support%20Feeling%20Responsive%20Jekyll%20Theme&language=en_GB&tags=github,jekyll,theme,webdesign&category=software)
+
+# Foundation-Jekyll
+The awesomeness of [Foundation][1] 6... powered by [Jekyll][2]
+
+### Version
+Current - 1.5.0
+
+## About
+Foundation-Jekyll is the quickest way to get started building static sites, prototypes, blogs, portfolios and much more. Foundation-Jekyll is flexible, yet highly customizable and ready to be deployed to Github Pages or your own hosting environment.
+
+Foundation-Jekyll assumes the following:
+- Minimum comfort level using the Terminal
+- Development environment setup (Homebrew, Ruby, xCode, etc...)
+- Some familiarity using Jekyll or are willing to get your hands dirty.
+- Love using Foundation to build websites
+- This project was created by @aaronkwhite in Colorful Colorado.
+
+### Get Started
+Install Jekyll
+
+```
+gem install jekyll
+```
+
+Clone the repo and start building your site:
+
+```
+ git clone git@github.com:aaronkwhite/foundation-jekyll.git foundation-jekyll
+```
+
+The core components are located in the *source* directory, so you can better organize your content and structure.
+
+```
+foundation-jekyll/
+├── _site/
+├── _source/
+    ├── _data/
+        ├── sample.json
+    ├── _drafts/
+        ├── 2014-12-14-draft-post.md
+    ├── _includes/
+        ├── header.html
+        ├── footer.html
+    ├── _layouts/
+        ├── default.html
+    ├── _posts/
+        ├── 2014-12-14-post-one.md
+        ├── 2014-12-14-post-two.md
+    ├── assets/
+        ├── fonts/
+        ├── images/
+        ├── javascripts/
+            ├── vendor/
+              ├── jquery/
+            ├── ...
+            ├── ...
+            ├── foundation.min.js
+            ├── ...
+            ├── ...
+            ├── motion-ui.js
+            ├── scripts.js
+        ├── stylesheets/
+          ├── components
+          ├── font-awesome/
+          ├── forms/
+          ├── grid/
+          ├── typography/
+          ├── util/
+          ├── vendor/
+          ├── _global.scss
+          ├── _settings.scss
+          ├── _theme.scss
+          ├── _variables.scss
+          ├── foundation.scss
+          ├── style.scss
+    ├── 404.html
+    ├── index.html
+    ├── feed.xml
+├── _config.yml
+├── .gitignore
+├── LICENSE
+├── README.md
+```
+
+We're using [Foundation][1] & Font-Awesome [Sass][3] Sass compiled by Jekyll automatically when we build the source.
+
+The primary stylesheet '/assets/stylessheets/style.scss' file is configured to include all necessary files for Foundation, Font-Awesome and your custom styles, just add your custom styles to '/assets/stylesheets/_theme.scss'.
+
+To test your site locally just run:
+
+```
+jekyll serve
+```
+
+*Note:* Make sure you update your git remote before you try to push any changes.
+
+### Dependencies
+ - ruby
+ - Jekyll
+ - kramdown
+ - pygments
+
+## Support/Contributing
+If you run into any issues or bugs, please create an issue in Github. Unfortunately I can't help everyone via email or twitter, I'm only one person.
+
+If you would like to contribute to this repo, hit me up on twitter [@aaronkwhite](http://twitter.com/aaronkwhite) and then we can talk pull requests.
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
 
 
-# Newsletter: Stay in Touch for Future Updates
-
-If you are a webdesigner interested in Jekyll, the static website generator, this little newsletter is for you. I share tutorials, clever code snippets and information about my own Jekyll Themes called [*Feeling Responsive*][7] and [*Simplicity*][8]. Please don't expect weekly emails :)
-
-[![Subscribe to Jekyll Newsletter](https://phlow.github.io/static/tinyletter_subscribe_button.png)](https://tinyletter.com/feeling-responsive)
 
 
-[![Start Video](https://github.com/Phlow/feeling-responsive/blob/gh-pages/images/video-feeling-responsive-1280x720.jpg)](https://www.youtube.com/embed/3b5zCFSmVvU)
-
-## A Responsive Jekyll Theme: *Feeling Responsive*
-
-Do you want to get to know *Feeling Responsive*? Than check it out first and have a look on its home at  <http://phlow.github.io/feeling-responsive/>.
-
-To get to know *Feeling Responsive* check out all the features explained in the [documentation][1].
-
-And what license is *Feeling Responsive* released under? [This one][2].
-
-
-
-## Why use this theme?
-
-Feeling Responsive is heavily customizable.
-
-1. Language-Support :)
-2. Optimized for speed and it's responsive.
-3. Built on Foundation Framework.
-4. Six different Headers.
-5. Customizable navigation, footer,...
-
-**[More ›][3]**
-
-
-
-## Changelog
-
-*Feeling Responsive* is in active development. Thank you to everyone who contributed, especially [Róbert Papp][5], [Alexandra von Criegern](https://github.com/plutonik-a) and [Juan Jose Amor Iglesias](https://github.com/jjamor).
-
-**[Read Changelog ›][6]**
-
-
-
-## Video Tutorial
-
-Click the image to [watch the YouTube-Video-Tutorial][4].
-
-[![Start Video](https://github.com/Phlow/feeling-responsive/blob/gh-pages/images/video-feeling-responsive-tutorial-frontpage.jpg)](https://www.youtube.com/watch?v=rLS-BEvlEyY)
-
-
-
-
-
-
-
-
- [1]: http://phlow.github.io/feeling-responsive/documentation/
- [2]: https://github.com/Phlow/feeling-responsive/blob/gh-pages/LICENSE
- [3]: http://phlow.github.io/feeling-responsive/info/
- [4]: https://www.youtube.com/watch?v=rLS-BEvlEyY
- [5]: https://github.com/TWiStErRob
- [6]: https://phlow.github.io/feeling-responsive/changelog/
- [7]: http://phlow.github.io/feeling-responsive/
- [8]: http://phlow.github.io/simplicity/
- [9]: #
- [10]: #
+[1]: http://foundation.zurb.com
+[2]: http://jekyllrb.com
+[3]: http://sass-lang.com
+[4]: http://compass-style.org
+[5]: https://incident57.com/codekit
