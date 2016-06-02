@@ -19,10 +19,8 @@ markdown:           kramdown
 permalink:          pretty
 
 # Server
-source:             ./source
-destination:        ./static
-
-safe: 1
+# source:             ./source Git Pages overrides this variable
+# destination:        ./static
 
 port:               9002
 url: http://www.open-curriculum.org # the base hostname & protocol for your site
