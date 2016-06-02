@@ -89,6 +89,10 @@ The primary stylesheet '/assets/stylessheets/style.scss' file is configured to i
 To test your site locally just run:
 
 ```
+bundle install
+```
+
+```
 jekyll serve
 ```
 
