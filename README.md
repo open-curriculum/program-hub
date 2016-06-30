@@ -7,13 +7,14 @@ Install Jekyll
 ```
 gem install jekyll
 ```
-
 ```
 gem install bundler
 ```
-
 ```
 bundle install
+```
+```
+gem install bundler
 ```
 
 To test your site locally just run:
