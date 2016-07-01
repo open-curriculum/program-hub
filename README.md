@@ -5,25 +5,29 @@
 Install Jekyll
 
 ```
-gem install jekyll
+[sudo] gem install jekyll
 ```
 ```
-gem install bundler
+[sudo] gem install bundler
 ```
 ```
-bundle install
+[sudo] gem install kramdown
 ```
 ```
-gem install bundler
+[sudo] bundle install
 ```
 
 To test your site locally just run:
 
 ```
-jekyll serve
+[sudo] jekyll serve
 ```
 
-
+if this process errors out -- please use:
+```
+[sudo] bundle clean --force
+```
+and then rerun `[sudo] jekyll serve`
 
 ### Dependencies
  - ruby
