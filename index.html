@@ -4,29 +4,42 @@ title: Home
 ---
 
 <header id="header" class="header">
+<img src="skyline.jpeg" /> <!--make this relative over absolute for css stuffs-->
 </header>
-
-<div data-sticky-container>
-  <div data-sticky data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="content:bottom">
-    <div class="top-bar"> 
-      <div class="top-bar-title">
-        <img src="http://placehold.it/150x38" alt="" />
-      </div> 
-      <div class="top-bar-right">
-        <ul class="menu">
-        {% for menuitem in site.menuitems %}
-        {% if menuitem.url == page.dir %}
-            {% assign class = "active" %}
-        {% else %}
-            {% assign class = "normal" %}
-        {% endif %}
-            <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
-        {% endfor %}
-        </ul>
+  <div data-sticky-container>
+    <div data-sticky data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="content:bottom">
+      <div class="top-bar"> 
+        <div class="top-bar-title">
+          <img src="http://placehold.it/150x38" alt="" />
+        </div> 
+        <div class="top-bar-right">
+          <ul class="menu">
+          {% for menuitem in site.menuitems %}
+          {% if menuitem.url == page.dir %}
+              {% assign class = "active" %}
+          {% else %}
+              {% assign class = "normal" %}
+          {% endif %}
+              <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
+          {% endfor %}
+          </ul>
+          <h2>
+            digital
+            multimedia
+            design
+          </h2>
+          <h1>
+            We Meet You 
+            Where You Are
+          </h1>
+          <h2>
+            Inspiring leadership in design
+          </h2>
+          <button type="button">Apply Now!</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 <br />
 
