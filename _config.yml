@@ -64,9 +64,9 @@ sass:
 menuitems:
   - url: /program-hub/
     title: Home
+  - url: /program-hub/program/
+    title: Program
   - url: /program-hub/about/
     title: About
-  - url: /program-hub/faculty/
-    title: Faculty
-  - url: /program-hub/contact/
-    title: Contact Us
+  - url: /program-hub/apply/
+    title: Apply
