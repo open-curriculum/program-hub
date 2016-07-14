@@ -1,7 +1,7 @@
 ---
 layout: default
 title: digital multimedia design
-slogan: We Meet You Where You Are
+slogan: We Meet You </br> Where You Are
 mission: Inspiring leadership in design
 program_heading: The Program
 future_heading: Our Expertise. Your Future.
@@ -9,22 +9,12 @@ faculty_heading: Our Experts. Your Faculty.
 ---
 
 <header id="header" class="header" style="background-image:url('assets/img/skyline.jpeg'); height:100%; width:100%;" >
-  <div class="row">
-    <div class="small-12">
-        {{ page.slogan }}
-        {{ page.mission }}
-        {{ page.description }}
-    </div>
-  </div>
-
   <div data-sticky-container>
-    <div data-sticky data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="content:bottom">
       <div class="top-bar"> 
-        <div class="top-bar-title">
-          <img src="http://placehold.it/150x38" alt="" />
-        </div> 
         <div class="top-bar-right">
           <ul class="menu">
+          <img src="http://onwardstate.com/wp-content/uploads/2015/07/Screen-Shot-2015-08-04-at-1.56.47-AM1.png" alt="psu logo" width="60" height="40"/>
+
           {% for menuitem in site.menuitems %}
           {% if menuitem.url == page.dir %}
               {% assign class = "active" %}
@@ -37,20 +27,47 @@ faculty_heading: Our Experts. Your Faculty.
           <button type="button">Apply Now</button>
         </div>
       </div>
-    </div>
   </div>
+  <div class="row">
+  </br>
+    <div class="small-12">
+      <h1>{{ page.title }}</h1>
+      <h2>{{ page.slogan }}</h2>
+      <h3>{{ page.mission }}</h3>
+    </div>
+</div>
 </header>
-
-<br />
-
+<br/>
 <div class='column row' id="program">
 <h2>{{ page.program_heading }}</h2>
   <p class='text-center'>Inspirational mission statement about how the DMD program is creating leadership in design.</p>
+  <form action="action_page.php">
+  Name:<br>
+  <input type="text" name="name">
+  <br>
+  Email:<br>
+  <input type="text" name="email">
+  <br>
+  Area of Interest:<br>
+  <input type="text" name="interest">
+  <br><br>
+  <input type="submit" value="Submit">
+  <br>
+</form>
 </div>
-<div class='column row' id="future" style="background-image:url('assets/img/skyline.jpeg'); height:100%; width:100%;">
+<div class='header' id="future" style="background-image:url('assets/img/photo-1448932155749-638e51b56f03.jpeg'); height:100%; width:100%;"> 3500 × 2333
   <h2>{{ page.future_heading }}</h2>
+  <ul>  
+    <li>UX</li>
+    <li>IA</li>
+    <li>IxD</li>
+    <li>GD</li>
+  </ul>
+  <h2>DESIGN YOUR PATH</h2>
+  <button>Pathways</button>
 </div>
 <div class='column row' id="faculty">
   <h2>{{ page.faculty_heading }}</h2>
   <img src="assets/img/skyline.jpeg" />
+  <h3>MEET THE FACULTY</h3>
 </div>
