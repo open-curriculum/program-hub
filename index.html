@@ -1,19 +1,20 @@
 ---
 layout: default
-title: Home
+title: digital multimedia design
+slogan: We Meet You </br> Where You Are
+mission: Inspiring leadership in design
+program_heading: The Program
+future_heading: Our Expertise. Your Future.
+faculty_heading: Our Experts. Your Faculty.
 ---
 
-<header id="header" class="header">
-<img src="skyline.jpeg" /> <!--make this relative over absolute for css stuffs-->
-</header>
+<header id="header" class="header" style="background-image:url('assets/img/skyline.jpeg'); height:100%; width:100%;" >
   <div data-sticky-container>
-    <div data-sticky data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="content:bottom">
       <div class="top-bar"> 
-        <div class="top-bar-title">
-          <img src="http://placehold.it/150x38" alt="" />
-        </div> 
         <div class="top-bar-right">
           <ul class="menu">
+          <img src="http://onwardstate.com/wp-content/uploads/2015/07/Screen-Shot-2015-08-04-at-1.56.47-AM1.png" alt="psu logo" width="60" height="40"/>
+
           {% for menuitem in site.menuitems %}
           {% if menuitem.url == page.dir %}
               {% assign class = "active" %}
@@ -23,35 +24,50 @@ title: Home
               <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
           {% endfor %}
           </ul>
-          <h2>
-            digital
-            multimedia
-            design
-          </h2>
-          <h1>
-            We Meet You 
-            Where You Are
-          </h1>
-          <h2>
-            Inspiring leadership in design
-          </h2>
-          <button type="button">Apply Now!</button>
+          <button type="button">Apply Now</button>
         </div>
       </div>
-    </div>
   </div>
-
-<br />
-
-<div class='column row' id="content">
-<h2>{{ page.title }}</h2>
-  <p class='text-center'>Ut nulla. Vivamus bibendum, nulla ut congue fringilla, lorem ipsum ultricies risus, ut rutrum velit tortor vel purus. In hac habitasse platea dictumst. Duis fermentum, metus sed congue gravida, arcu dui ornare urna, ut imperdiet enim odio dignissim ipsum. Nulla facilisi. Cras magna ante, bibendum sit amet, porta vitae, laoreet ut, justo. Nam tortor sapien, pulvinar nec, malesuada in, ultrices in, tortor. Cras ultricies placerat eros. Quisque odio eros, feugiat non, iaculis nec, lobortis sed, arcu. Pellentesque sit amet sem et purus pretium consectetuer.
-
-  Ut nulla. Vivamus bibendum, nulla ut congue fringilla, lorem ipsum ultricies risus, ut rutrum velit tortor vel purus. In hac habitasse platea dictumst. Duis fermentum, metus sed congue gravida, arcu dui ornare urna, ut imperdiet enim odio dignissim ipsum. Nulla facilisi. Cras magna ante, bibendum sit amet, porta vitae, laoreet ut, justo. Nam tortor sapien, pulvinar nec, malesuada in, ultrices in, tortor. Cras ultricies placerat eros. Quisque odio eros, feugiat non, iaculis nec, lobortis sed, arcu. Pellentesque sit amet sem et purus pretium consectetuer.</p>
-  <img src="http://placehold.it/1200x300&text=content/100">
-  <img src="http://placehold.it/1200x300&text=content/200">
-  <img src="http://placehold.it/1200x300&text=content/300">
-  <img src="http://placehold.it/1200x300&text=content/400">
-  <img src="http://placehold.it/1200x300&text=content/500">
-  <img src="http://placehold.it/1200x300&text=content/600">
+  <div class="row">
+  </br>
+    <div class="small-12">
+      <h1>{{ page.title }}</h1>
+      <h2>{{ page.slogan }}</h2>
+      <h3>{{ page.mission }}</h3>
+    </div>
+</div>
+</header>
+<br/>
+<div class='column row' id="program">
+<h2>{{ page.program_heading }}</h2>
+  <p class='text-center'>Inspirational mission statement about how the DMD program is creating leadership in design.</p>
+  <form action="action_page.php">
+  Name:<br>
+  <input type="text" name="name">
+  <br>
+  Email:<br>
+  <input type="text" name="email">
+  <br>
+  Area of Interest:<br>
+  <input type="text" name="interest">
+  <br><br>
+  <input type="submit" value="Submit">
+  <br>
+</form>
+</div>
+<div class='header' id="future" style="background-image:url('assets/img/photo-1448932155749-638e51b56f03.jpeg'); height:100%; width:100%;"> 3500 × 2333
+  <h2>{{ page.future_heading }}</h2>
+  <ul>  
+    <li>UX</li>
+    <li>IA</li>
+    <li>IxD</li>
+    <li>GD</li>
+  </ul>
+  <h2>DESIGN YOUR PATH</h2>
+  <button>Pathways</button>
+</div>
+<div class='column row' id="faculty">
+  <h2>{{ page.faculty_heading }}</h2>
+  <img src="assets/img/skyline.jpeg" />
+  <h3>MEET THE FACULTY</h3>
 </div>
