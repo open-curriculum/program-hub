@@ -47,16 +47,18 @@
 // @include foundation-thumbnail;
 // @include foundation-title-bar;
 // @include foundation-tooltip;
-// @include foundation-top-bar;
+ @include foundation-top-bar;
 
 
 // Font-Awesome
 @import 'font-awesome/font-awesome';
 
 // Google fonts
-//@import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic);
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic);
 
 // Custom theme files
 @import 'theme';
 
 @import 'syntax';
+@import 'header';
+

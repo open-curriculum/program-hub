@@ -1,0 +1,56 @@
+//Colors
+$black:#000;
+$soft-grey:#999;
+$dark-grey:#111;
+$blue:#00AEEF;
+$green:#00A651;
+$orange:#F7941E;
+//Math
+$header-height:34rem;
+svg {
+  //mix-blend-mode:multiply;
+  // opacity:0.7;
+  width:45%;
+  text-align:right;
+  margin-right:2rem;
+  
+  .a {
+    fill:none;
+    stroke:$black;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+}  
+.isolate {
+  isolation:isolate;
+} /* without isolation, the background color will be taken into account */
+
+.svg-header {
+  text-align:center;
+  height:$header-height;
+  background-image:url("https://images.unsplash.com/photo-1439337153520-7082a56a81f4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3ea5378fcfec4b870de0c6c3dbe271b3");
+  background-size:cover;
+  background-position:bottom;
+//   background-color: $blue;
+// background-blend-mode: luminosity;
+}
+h1 {
+  font-family: 'Exo 2', sans-serif;
+  text-align:left;
+  line-height:2.8rem;
+  span {
+    //display:block;
+  }
+}
+// flex stuff
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:$header-height;
+  resize: vertical;
+  .right-justify {
+    align-self:flex-end;
+  }
+}
+// End flex stuff
