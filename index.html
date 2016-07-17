@@ -1,8 +1,6 @@
 ---
 layout: default
 title: digital multimedia design
-slogan: We Meet You </br> Where You Are
-mission: Inspiring leadership in design
 program_heading: The Program
 future_heading: Our Expertise. Your Future.
 faculty_heading: Our Experts. Your Faculty.
@@ -14,7 +12,7 @@ faculty_heading: Our Experts. Your Faculty.
       <div class="foundation-top-bar"> 
         <div class="top-bar-right">
           <ul class="menu">
-          <img src="http://onwardstate.com/wp-content/uploads/2015/07/Screen-Shot-2015-08-04-at-1.56.47-AM1.png" alt="psu logo" width="60" height="40"/>
+          <img src="http://onwardstate.com/wp-content/uploads/2015/07/Screen-Shot-2015-08-04-at-1.56.47-AM1.png" alt="psu logo" width="120" height="80"/>
 
           {% for menuitem in site.menuitems %}
           {% if menuitem.url == page.dir %}
@@ -24,8 +22,8 @@ faculty_heading: Our Experts. Your Faculty.
           {% endif %}
               <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
           {% endfor %}
+           <input type="submit" value="Apply Now">
           </ul>
-          <input type="submit" value="Apply Now">
         </div>
       </div>
   </div>
@@ -38,32 +36,32 @@ faculty_heading: Our Experts. Your Faculty.
   </div>
   </div>
 </div>
-  <div class="row">
-  </br>
-    <div class="small-12">
-      <h1>{{ page.title }}</h1>
-      <h2>{{ page.slogan }}</h2>
-      <h3>{{ page.mission }}</h3>
-    </div>
-</div>
 <br/>
-<div class='column row' id="program">
-<h2>{{ page.program_heading }}</h2>
-  <p class='text-center'>Inspirational mission statement about how the DMD program is creating leadership in design.</p>
-  <form action="action_page.php">
-  Name:<br>
-  <input type="text" name="name">
-  <br>
-  Email:<br>
-  <input type="text" name="email">
-  <br>
-  Area of Interest:<br>
-  <input type="text" name="interest">
-  <br><br>
-  <input type="submit" value="Submit">
-  <br>
-</form>
+<div class="row" id="program">
+  <h2>{{ page.program_heading }}</h2>
+  </br>
+  <h4>Inspirational mission statement about how the DMD program is creating leadership in design.</h4>
+  <div class="float-right">
+      <div class="float-right"> 
+        <h5>Request Information</h5>
+        </br>
+        <form action="action_page.php">
+          Name:<br>
+          <input type="text" name="name">
+          <br>
+          Email:<br>
+          <input type="text" name="email">
+          <br>
+          Area of Interest:<br>
+          <input type="text" name="interest">
+          <br><br>
+          <input type="submit" value="Submit">
+          <br>
+        </form>
+      </div>
+  </div>
 </div>
+</br>
 <div class='header' id="future" style="background-image:url('assets/img/photo-1448932155749-638e51b56f03.jpeg'); height:100%; width:100%;">
   <h2>{{ page.future_heading }}</h2>
   <ul>  
