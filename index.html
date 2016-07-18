@@ -22,7 +22,16 @@ faculty_heading: Our Experts. Your Faculty.
           {% endif %}
               <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
           {% endfor %}
-           <input type="submit" value="Apply Now">
+            <li class="has-form">
+              <div class="row collapse">
+                <div class="large-8 small-9 columns">
+                  <input type="text" placeholder="Find Stuff">
+                </div>
+                <div class="large-4 small-3 columns">
+                  <a href="#" class="alert button expand">Search</a>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -36,6 +45,11 @@ faculty_heading: Our Experts. Your Faculty.
   </div>
   </div>
 </div>
+  <div class="row">
+    <div class="small-12">
+    <input type="submit" class="button expand small-12" value="Apply Now">
+    </div>
+  </div>
 <br/>
 <div class="row" id="program">
   <div class="small-6">
@@ -55,7 +69,7 @@ faculty_heading: Our Experts. Your Faculty.
           Area of Interest:<br>
           <input type="text" name="interest">
           <br><br>
-          <input type="submit" value="Submit">
+          <input type="submit" class="button expanded" value="Submit">
           <br>
         </form>
   </div>
@@ -76,7 +90,7 @@ faculty_heading: Our Experts. Your Faculty.
 <div class="row">
     <div class="column">
       <h2>DESIGN YOUR PATH</h2>
-      <input type="submit" value="Pathways">
+      <input type="submit" class="button" value="Pathways">
     </div>
   </div>
 </div>

@@ -70,7 +70,3 @@ menuitems:
     title: Program
   - url: /program-hub/about/
     title: About
-  - url: /program-hub/apply/
-    title: Apply
-  - url: /program-hub/search/
-    title: Search
