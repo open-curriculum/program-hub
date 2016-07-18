@@ -62,10 +62,7 @@ sass:
 #Navigation
 menuitems:
   - url: /program-hub/
-    title: digital multimedia design
-    slogan: We Meet You Where You Are
-    mission: Inspiring leadership in design
-    description: The Program
+    title: Home
   - url: /program-hub/program/
     title: Program
   - url: /program-hub/about/
