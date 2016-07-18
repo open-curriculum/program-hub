@@ -3,33 +3,50 @@ layout: default
 title: About
 ---
 
-<header id="header" class="header">
-</header>
-
-<div data-sticky-container>
-  <div data-sticky data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="content:bottom">
-    <div class="top-bar"> 
-      <div class="top-bar-title">
-        <img src="http://placehold.it/150x38" alt="" />
-      </div> 
-      <div class="top-bar-right">
-        <ul class="menu">
-        {% for menuitem in site.menuitems %}
-        {% if menuitem.url == page.dir %}
-            {% assign class = "active" %}
-        {% else %}
-            {% assign class = "normal" %}
-        {% endif %}
-            <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
-        {% endfor %}
-        </ul>
+<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode -->
+<div class="svg-header isolate" style="background-image:url('../assets/img/photo-1461604516355-61bd391c793f.jpeg');">
+  <div foundation-sticky class="row">
+      <div class="foundation-top-bar"> 
+        <div class="top-bar-right">
+          <ul class="menu small-12">
+              <a href="http://psu.edu"><img alt="The Penn State University Sheild" src="../assets/img/psu_arch_shield.svg" width="56" height="61.813"/></a>
+              <a href="/"><img alt="The College of Arts and Architecture Masthead" src="../assets/img/psu_arch_masthead.svg" width="280" height="46.422" /></a>
+              <div class=" menu small-push-6">
+              {% for menuitem in site.menuitems %}
+              {% if menuitem.url == page.dir %}
+                  {% assign class = "active" %}
+              {% else %}
+                  {% assign class = "normal" %}
+              {% endif %}
+                  <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
+              {% endfor %}
+                <li class="has-form">
+                  <div class="row collapse">
+                    <div class="large-8 small-9 columns">
+                      <input type="text" placeholder="Search Site...">
+                    </div>
+                    <div class="large-4 small-3 columns">
+                      <a href="#" class="button expand">Search</a>
+                    </div>
+              </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
+  </div>
+  <div class="row">
+    <div class="column small-6 small-push-6">
+      <h1 class="center">{{ page.title }}</h1>
     </div>
   </div>
 </div>
-
-<br />
-
+  <div class="row">
+    <div class="small-12">
+    <input type="submit" class="button expand small-12" value="Apply Now">
+    </div>
+  </div>
+<br/>
 <div class='column row' id="content">
 <h2>{{ page.title }}</h2>
   <p class='text-center'>Ut nulla. Vivamus bibendum, nulla ut congue fringilla, lorem ipsum ultricies risus, ut rutrum velit tortor vel purus. In hac habitasse platea dictumst. Duis fermentum, metus sed congue gravida, arcu dui ornare urna, ut imperdiet enim odio dignissim ipsum. Nulla facilisi. Cras magna ante, bibendum sit amet, porta vitae, laoreet ut, justo. Nam tortor sapien, pulvinar nec, malesuada in, ultrices in, tortor. Cras ultricies placerat eros. Quisque odio eros, feugiat non, iaculis nec, lobortis sed, arcu. Pellentesque sit amet sem et purus pretium consectetuer.
