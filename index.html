@@ -8,29 +8,30 @@ faculty_heading: Our Experts. Your Faculty.
 
 <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode -->
 <div class="svg-header isolate">
-  <div foundation-sticky>
+  <div foundation-sticky class="row">
       <div class="foundation-top-bar"> 
         <div class="top-bar-right">
-          <ul class="menu">
-          <a href="http://psu.edu"><img alt="The Penn State University Sheild" src="assets/img/psu_arch_shield.svg" width="56" height="61.813"/></a>
-          <a href="/"><img alt="The College of Arts and Architecture Masthead" src="assets/img/psu_arch_masthead.svg" width="280" height="46.422" /></a>
-
-          {% for menuitem in site.menuitems %}
-          {% if menuitem.url == page.dir %}
-              {% assign class = "active" %}
-          {% else %}
-              {% assign class = "normal" %}
-          {% endif %}
-              <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
-          {% endfor %}
-            <li class="has-form">
-              <div class="row collapse">
-                <div class="large-8 small-9 columns">
-                  <input type="text" placeholder="Search Site...">
-                </div>
-                <div class="large-4 small-3 columns">
-                  <a href="#" class="alert button expand">Search</a>
-                </div>
+          <ul class="menu small-9">
+              <a href="http://psu.edu"><img alt="The Penn State University Sheild" src="assets/img/psu_arch_shield.svg" width="56" height="61.813"/></a>
+              <a href="/"><img alt="The College of Arts and Architecture Masthead" src="assets/img/psu_arch_masthead.svg" width="280" height="46.422" /></a>
+              <div class=" menu small-push-5">
+              {% for menuitem in site.menuitems %}
+              {% if menuitem.url == page.dir %}
+                  {% assign class = "active" %}
+              {% else %}
+                  {% assign class = "normal" %}
+              {% endif %}
+                  <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
+              {% endfor %}
+                <li class="has-form">
+                  <div class="row collapse">
+                    <div class="large-8 small-9 columns">
+                      <input type="text" placeholder="Search Site...">
+                    </div>
+                    <div class="large-4 small-3 columns">
+                      <a href="#" class="alert button expand">Search</a>
+                    </div>
+              </div>
               </div>
             </li>
           </ul>
