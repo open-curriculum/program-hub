@@ -40,10 +40,10 @@ faculty_heading: Our Experts. Your Faculty.
 <div class="row" id="program">
   <div class="small-6">
     <h2>{{ page.program_heading }}</h2>
-    <h4>Inspirational mission statement about how the DMD program is creating leadership in design.</h4>
+    <h4 style="font-style: italic;" >Inspirational mission statement about how the DMD program is creating leadership in design.</h4>
   </div>
       <div class="column small-6"> 
-        <h5>Request Information</h5>
+        <h4>Request Information</h4>
         </br>
         <form action="action_page.php">
           Name:<br>
@@ -62,15 +62,23 @@ faculty_heading: Our Experts. Your Faculty.
 </div>
 </br>
 <div class='header' id="future" style="background-image:url('assets/img/photo-1448932155749-638e51b56f03.jpeg'); height:100%; width:100%;">
-  <h2>{{ page.future_heading }}</h2>
-  <ul>  
-    <li>UX</li>
-    <li>IA</li>
-    <li>IxD</li>
-    <li>GD</li>
-  </ul>
-  <h2>DESIGN YOUR PATH</h2>
-  <input type="submit" value="Pathways">
+  <div class="row">
+    <div class="column">
+    <h2>{{ page.future_heading }}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+        <p>UX IA IxD GD</p>
+    </div>
+  </div>
+</br>
+<div class="row">
+    <div class="column">
+      <h2>DESIGN YOUR PATH</h2>
+      <input type="submit" value="Pathways">
+    </div>
+  </div>
 </div>
 <div class="row" id="faculty">
   <h2>{{ page.faculty_heading }}</h2>
@@ -89,5 +97,4 @@ faculty_heading: Our Experts. Your Faculty.
     </div>
   </div>
   </div>
-  <h3>MEET THE FACULTY</h3>
 </div>
