@@ -7,8 +7,23 @@
 // FOUNDATION OVERRIDES
 
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
 // 1. Global
 // ---------
+
+$black:#000;
+$soft-grey:#999;
+$dark-grey:#111;
+$blue: #1e407c;
+$red: #e33232;
+$green:#31bf9c;
+$orange:#F7941E;
 
 $foundation-palette: (
   primary: #1e407c,

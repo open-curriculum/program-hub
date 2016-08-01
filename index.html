@@ -63,68 +63,73 @@ faculty_heading: Our Experts. Your Faculty.
 <!-- END SVG HEADER -->
 
 <!-- REQUEST ROW -->
-<div class="row" id="program">
-  <div class="small-12 medium-6 large-8 columns">
+<div class="row request-callout" id="program">
+  <div class="small-12 medium-7 large-8 columns">
     <h2 class="callout-heading">{{ page.program_heading }}</h2>
     <h3>Inspirational mission statement about how the DMD program is creating leadership in design.</h3>
   </div>
-  <div class="small-12 medium-6 large-4 columns"> 
+  <div class="small-12 medium-5 large-4 columns request-form"> 
       <h3>Request Information</h3>
       <form action="action_page.php">
         Name:<br>
         <input type="text" name="name">
-        <br>
         Email:<br>
         <input type="text" name="email">
-        <br>
         Area of Interest:<br>
         <input type="text" name="interest">
-        <br><br>
         <input type="submit" class="button expanded" value="Submit">
         <br>
       </form>
   </div>
 </div>
 
-<div class='paths-callout' id="future" style="">
+<div class="paths-callout" id="future">
   <div class="row">
     <div class="small-12 columns">
       <h2 class="callout-heading">{{ page.future_heading }}</h2>
     </div>
-    <div class="small-12 column">
+    <div class="small-12 columns">
       <ul class="pagination" role="navigation" aria-label="Pagination">
-        <li><a href="#" aria-label="UX">UX</a></li>
-        <li><a href="#" aria-label="IA">IA</a></li>
-        <li><a href="#" aria-label="IxD">IxD</a></li>
-        <li><a href="#" aria-label="GD">GD</a></li>
+        <li><a href="/program-hub/program/" class="circle-blue" aria-label="UX">UX</a></li>
+        <li><a href="/program-hub/program/" class="circle-red" aria-label="IA">IA</a></li>
+        <li><a href="/program-hub/program/" class="circle-green" aria-label="IxD">IxD</a></li>
+        <li><a href="/program-hub/program/" class="circle-black" aria-label="GD">GD</a></li>
       </ul>
     </div>
   </div>
   <div class="row">
-    <div class="small-12 columns">
+    <div class="small-12 columns design-your-path">
       <h3>DESIGN YOUR PATH</h3>
-      <input type="submit" class="button" value="Pathways">
+      <a href="/program-hub/program" class="button">Pathways <i class="fa fa-random" aria-hidden="true"></i></a>
     </div>
   </div>
 </div>
 <!-- END PATHS CALLOUT -->
 
-<div class="row" id="faculty">
-    <h2 class="callout-heading">{{ page.faculty_heading }}</h2>
+<!-- FACULTY ROW -->
+<div class="faculty-callout">
+  <div class="row" id="faculty">
+    <div class="small-12 columns">
+      <h2 class="callout-heading">{{ page.faculty_heading }}</h2>
+    </div>
+  </div>
+  <div class="row faculty-img-row">
+    <div class="small-12 medium-4 large-4 columns">
+      <img class="thumbnail" src="assets/img/collins-image-1.png" />
+      <h3>Michael Collins</h3>
+    </div>
+    <div class="small-12 medium-4 large-4 columns">
+      <img class="thumbnail" src="assets/img/collins-image-2.png" />
+      <h3>Michael Collins</h3>
+    </div>
+    <div class="small-12 medium-4 large-4 columns">
+      <img class="thumbnail" src="assets/img/collins-image-3.png" />
+      <h3>Michael Collins</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 small-centered medium-6 large-6 columns">
+      <a href="/program-hub/about/" class="button expanded">Meet the Faculty</a>
+    </div>
+  </div>
 </div>
-<div class="row">
-      <div class="small-12 medium-4 large-4 columns">
-        <img class="thumbnail" src="assets/img/collins-image-3.png" />
-        <h3>Michael Collins</h3>
-      </div>
-      <div class="small-12 medium-4 large-4 columns">
-        <img class="thumbnail" src="assets/img/collins-image-3.png" />
-        <h3>Michael Collins</h3>
-      </div>
-      <div class="small-12 medium-4 large-4 columns">
-        <img class="thumbnail" src="assets/img/collins-image-3.png" />
-        <h3>Michael Collins</h3>
-      </div>
-</div>
-
-
