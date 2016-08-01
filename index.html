@@ -8,45 +8,42 @@ faculty_heading: Our Experts. Your Faculty.
 
 <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode -->
 <div class="svg-header isolate">
-<div class="row">
-  <!-- TOP BAR -->
-  <div class="top-bar stacked-for-medium">
-    <div class="top-bar-title">
-        <a href="http://psu.edu"><img alt="The Penn State University Sheild" src="assets/img/psu_arch_shield_blue.svg" width="56" height="61.813"/></a>
-        <a href="/"><img alt="The College of Arts and Architecture Masthead" src="assets/img/psu_arch_masthead_blue.svg" width="280" height="46.422" /></a>
-    </div>
-    <div>
-      <div class="top-bar-left"></div>
-      <div class="top-bar-right">
-        <ul class="menu">
-          {% for menuitem in site.menuitems %}
-          {% if menuitem.url == page.dir %}
-              {% assign class = "active" %}
-          {% else %}
-              {% assign class = "normal" %}
-          {% endif %}
-              <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
-          {% endfor %}
+  <div class="row">
+    <!-- TOP BAR -->
+    <div class="top-bar stacked-for-medium">
+      <div class="top-bar-title">
+          <a class="shield" href="http://psu.edu"><img alt="The Penn State University Sheild" src="assets/img/psu_arch_shield_blue.svg"/></a>
+          <a class="masthead" href="/"><img alt="The College of Arts and Architecture Masthead" src="assets/img/psu_arch_masthead_blue.svg"/></a>
+      </div>
+      <div class="nav-container">
+        <div class="top-bar-left"></div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            {% for menuitem in site.menuitems %}
+            {% if menuitem.url == page.dir %}
+                {% assign class = "active" %}
+            {% else %}
+                {% assign class = "normal" %}
+            {% endif %}
+                <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
+            {% endfor %}
 
-          <li class="apply-topbar-button"><a href="http://worldcampus.psu.edu" target="_blank">Apply</a></li>
-          
-          <!-- search bar -->
-          <!-- <li><input type="search" placeholder="Search"></li>
-          <li><button type="button" class="button">Search</button></li> -->
+            <li class="apply-topbar-button"><a href="http://worldcampus.psu.edu" target="_blank">Apply</a></li>
+            <li><a href="#"><i class="fa fa-search"></i></a></li>
 
-        </ul>
+          </ul>
 
+        </div>
       </div>
     </div>
+    <!-- END TOP BAR -->
   </div>
-  <!-- END TOP BAR -->
-</div>
   <!-- PROGRAM MARK -->
   <div class="row">
-      <div class="column small-6 small-push-6">
+      <div class="small-6 small-push-6 columns">
         <h1 class="center"><span>Digital</span> <span>Multimedia</span> <span>Design</span></h1>
       </div>
-      <div class="column small-6 small-pull-6 center">
+      <div class="small-6 small-pull-6 center columns">
         <svg class="right-justify" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 66.5119"><defs></defs><title>Triangle Lattice</title><polygon class="a" points="13.1 0.5 19.4 11.412 6.8 11.412 13.1 0.5"/><polygon class="a" points="25.7 0.5 32 11.412 19.4 11.412 25.7 0.5"/><polygon class="a" points="19.4 11.412 13.1 0.5 25.7 0.5 19.4 11.412"/><polygon class="a" points="38.3 0.5 44.6 11.412 32 11.412 38.3 0.5"/><polygon class="a" points="32 11.412 25.7 0.5 38.3 0.5 32 11.412"/><polygon class="a" points="44.6 11.412 38.3 0.5 50.9 0.5 44.6 11.412"/><polygon class="a" points="50.9 0.5 57.2 11.412 44.6 11.412 50.9 0.5"/><polygon class="a" points="57.2 11.412 50.9 0.5 63.5 0.5 57.2 11.412"/><polygon class="a" points="6.8 11.412 13.1 22.324 0.5 22.324 6.8 11.412"/><polygon class="a" points="19.4 11.412 25.7 22.324 13.1 22.324 19.4 11.412"/><polygon class="a" points="13.1 22.324 6.8 11.412 19.4 11.412 13.1 22.324"/><polygon class="a" points="32 11.412 38.3 22.324 25.7 22.324 32 11.412"/><polygon class="a" points="25.7 22.324 19.4 11.412 32 11.412 25.7 22.324"/><polygon class="a" points="38.3 22.324 32 11.412 44.6 11.412 38.3 22.324"/><polygon class="a" points="44.6 11.412 50.9 22.324 38.3 22.324 44.6 11.412"/><polygon class="a" points="50.9 22.324 44.6 11.412 57.2 11.412 50.9 22.324"/><polygon class="a" points="13.1 22.324 19.4 33.236 6.8 33.236 13.1 22.324"/><polygon class="a" points="25.7 22.324 32 33.236 19.4 33.236 25.7 22.324"/><polygon class="a" points="19.4 33.236 13.1 22.324 25.7 22.324 19.4 33.236"/><polygon class="a" points="38.3 22.324 44.6 33.236 32 33.236 38.3 22.324"/><polygon class="a" points="32 33.236 25.7 22.324 38.3 22.324 32 33.236"/><polygon class="a" points="44.6 33.236 38.3 22.324 50.9 22.324 44.6 33.236"/><polygon class="a" points="50.9 22.324 57.2 33.236 44.6 33.236 50.9 22.324"/><polygon class="a" points="57.2 33.236 50.9 22.324 63.5 22.324 57.2 33.236"/><polygon class="a" points="6.8 33.236 13.1 44.148 0.5 44.148 6.8 33.236"/><polygon class="a" points="19.4 33.236 25.7 44.148 13.1 44.148 19.4 33.236"/><polygon class="a" points="13.1 44.148 6.8 33.236 19.4 33.236 13.1 44.148"/><polygon class="a" points="32 33.236 38.3 44.148 25.7 44.148 32 33.236"/><polygon class="a" points="25.7 44.148 19.4 33.236 32 33.236 25.7 44.148"/><polygon class="a" points="38.3 44.148 32 33.236 44.6 33.236 38.3 44.148"/><polygon class="a" points="44.6 33.236 50.9 44.148 38.3 44.148 44.6 33.236"/><polygon class="a" points="50.9 44.148 44.6 33.236 57.2 33.236 50.9 44.148"/><polygon class="a" points="13.1 44.188 19.4 55.1 6.8 55.1 13.1 44.188"/><polygon class="a" points="25.7 44.188 32 55.1 19.4 55.1 25.7 44.188"/><polygon class="a" points="19.4 55.1 13.1 44.188 25.7 44.188 19.4 55.1"/><polygon class="a" points="38.3 44.188 44.6 55.1 32 55.1 38.3 44.188"/><polygon class="a" points="32 55.1 25.7 44.188 38.3 44.188 32 55.1"/><polygon class="a" points="44.6 55.1 38.3 44.188 50.9 44.188 44.6 55.1"/><polygon class="a" points="50.9 44.188 57.2 55.1 44.6 55.1 50.9 44.188"/><polygon class="a" points="57.2 55.1 50.9 44.188 63.5 44.188 57.2 55.1"/><polygon class="a" points="6.8 55.1 13.1 66.012 0.5 66.012 6.8 55.1"/><polygon class="a" points="19.4 55.1 25.7 66.012 13.1 66.012 19.4 55.1"/><polygon class="a" points="13.1 66.012 6.8 55.1 19.4 55.1 13.1 66.012"/><polygon class="a" points="32 55.1 38.3 66.012 25.7 66.012 32 55.1"/><polygon class="a" points="25.7 66.012 19.4 55.1 32 55.1 25.7 66.012"/><polygon class="a" points="38.3 66.012 32 55.1 44.6 55.1 38.3 66.012"/><polygon class="a" points="44.6 55.1 50.9 66.012 38.3 66.012 44.6 55.1"/><polygon class="a" points="50.9 66.012 44.6 55.1 57.2 55.1 50.9 66.012"/></svg>
     </div>
   </div>
@@ -54,7 +51,7 @@ faculty_heading: Our Experts. Your Faculty.
 
   <!-- APPLY ROW -->
   <div class="row apply-button-row">
-    <div class="small-8 small-centered medium-6 medium-centered large-6 large-centered">
+    <div class="small-8 small-centered medium-6 large-6 columns">
       <a class="expanded button" href="#">Apply Now</a>
     </div>
   </div>

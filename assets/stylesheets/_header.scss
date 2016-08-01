@@ -6,6 +6,38 @@ $header-height: 90vh;
 .top-bar{
   background: transparent;
   width: 100%;
+  .top-bar-title{
+
+    a.shield{
+      img{
+        width: rem-calc(56);
+        height: rem-calc(61.813);
+        @media #{$medium-only}{
+
+        }
+      }
+    }
+    a.masthead{
+      img{
+        width: rem-calc(280);
+        height: rem-calc(46.422);
+        @media #{$medium-only}{
+
+        }
+      }
+    }
+
+      @media #{$small-only} {
+        margin: 0 auto;
+      }
+    }
+    .nav-container{
+      @media #{$small-only} {
+        margin: 0 auto;
+        padding-top: 1rem;
+      }
+    }
+
   ul{
     background: transparent;
   }
@@ -14,6 +46,8 @@ $header-height: 90vh;
   }
   li.apply-topbar-button a {
     background: $blue;
+    @include border-radius(3px);
+    font-weight: 700;
   }
 }
 
@@ -47,7 +81,7 @@ svg {
   background-position:bottom;
 //   background-color: $blue;
 // background-blend-mode: luminosity;
-}
+
 h1 {
   font-family: 'Exo 2', sans-serif;
   text-align:left;
@@ -57,6 +91,9 @@ h1 {
     //display:block;
   }
 }
+
+}
+
 // flex stuff
 .center {
   display: flex;
