@@ -3,6 +3,29 @@
 // Author: @aaronkwhite
 //
 
+
+// FOUNDATION OVERRIDES
+
+
+// 1. Global
+// ---------
+
+$foundation-palette: (
+  primary: #1e407c,
+  secondary: #777,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #ec5840,
+);
+// $light-gray: #e6e6e6;
+// $medium-gray: #cacaca;
+// $dark-gray: #8a8a8a;
+// $body-background: $white;
+// $body-font-color: $black;
+$body-font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
+
+
+
 // Colors
-$black:                     #444444;
+$black:                     #000000;
 $white:                     #ffffff;

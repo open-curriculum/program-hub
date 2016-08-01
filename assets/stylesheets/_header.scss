@@ -2,11 +2,27 @@
 $black:#000;
 $soft-grey:#999;
 $dark-grey:#111;
-$blue:#00AEEF;
+$blue: #1e407c;
 $green:#00A651;
 $orange:#F7941E;
+
 //Math
-$header-height:34rem;
+$header-height: 90vh;
+
+.top-bar{
+  background: transparent;
+  width: 100%;
+  ul{
+    background: transparent;
+  }
+  .menu>li>a{
+    color: $white;
+  }
+  li.apply-topbar-button a {
+    background: $blue;
+  }
+}
+
 svg {
   //mix-blend-mode:multiply;
   // opacity:0.7;
@@ -28,7 +44,11 @@ svg {
 .svg-header {
   text-align:center;
   height:$header-height;
-  background-image:url("https://images.unsplash.com/photo-1439337153520-7082a56a81f4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3ea5378fcfec4b870de0c6c3dbe271b3");
+  // background-image:url("https://images.unsplash.com/photo-1439337153520-7082a56a81f4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3ea5378fcfec4b870de0c6c3dbe271b3");
+
+  background: linear-gradient(33deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), 
+  url('https://images.unsplash.com/photo-1439337153520-7082a56a81f4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3ea5378fcfec4b870de0c6c3dbe271b3') center center/cover no-repeat;
+
   background-size:cover;
   background-position:bottom;
 //   background-color: $blue;
@@ -47,10 +67,40 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height:$header-height;
+  // height:$header-height;
+  margin-top: 20vh;
   resize: vertical;
   .right-justify {
     align-self:flex-end;
   }
 }
 // End flex stuff
+
+.apply-button-row{
+  margin-top: 2rem;
+  
+}
+
+
+// PROGRAM HEADER
+.program-header {
+  text-align: center;
+  height: 56vh;
+  background: linear-gradient(33deg, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), 
+  url('../../assets/img/photo-1428223501723-d821c5d00ca3.jpeg') center center/cover no-repeat;
+  // background-size: cover;
+  // background-position: center;
+}
+
+// ABOUT HEADER
+
+.about-header {
+  text-align: center;
+  height: 56vh;
+  background: linear-gradient(33deg, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), 
+  url('../../assets/img/photo-1461604516355-61bd391c793f.jpeg') center center/cover no-repeat;
+  // background-size: cover;
+  // background-position: center;
+}
+
+

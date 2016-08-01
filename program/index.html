@@ -4,63 +4,81 @@ title: The Program
 ---
 
 <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode -->
-<div class="svg-header isolate" style="background-image:url('../assets/img/photo-1428223501723-d821c5d00ca3.jpeg');">
-  <div foundation-sticky class="row">
-      <div class="foundation-top-bar"> 
+<div class="program-header">
+  <!-- TOP BAR -->
+  <div class="row">
+    <div class="top-bar stacked-for-medium">
+      <div class="top-bar-title">
+          <a href="http://psu.edu"><img alt="The Penn State University Sheild" src="../assets/img/psu_arch_shield_blue.svg" width="56" height="61.813"/></a>
+          <a href="/"><img alt="The College of Arts and Architecture Masthead" src="../assets/img/psu_arch_masthead_blue.svg" width="280" height="46.422" /></a>
+      </div>
+      <div>
+        <div class="top-bar-left"></div>
         <div class="top-bar-right">
-          <ul class="menu small-12">
-              <a href="http://psu.edu"><img alt="The Penn State University Sheild" src="../assets/img/psu_arch_shield.svg" width="56" height="61.813"/></a>
-              <a href="/"><img alt="The College of Arts and Architecture Masthead" src="../assets/img/psu_arch_masthead.svg" width="280" height="46.422" /></a>
-              <div class=" menu small-push-5">
-              {% for menuitem in site.menuitems %}
-              {% if menuitem.url == page.dir %}
-                  {% assign class = "active" %}
-              {% else %}
-                  {% assign class = "normal" %}
-              {% endif %}
-                  <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
-              {% endfor %}
-                <li class="has-form">
-                  <div class="row collapse">
-                    <div class="large-8 small-9 columns">
-                      <input type="text" placeholder="Search Site...">
-                    </div>
-                    <div class="large-4 small-3 columns">
-                      <a href="#" class="button expand">Search</a>
-                    </div>
-              </div>
-              </div>
-            </li>
+          <ul class="menu">
+            {% for menuitem in site.menuitems %}
+            {% if menuitem.url == page.dir %}
+                {% assign class = "active" %}
+            {% else %}
+                {% assign class = "normal" %}
+            {% endif %}
+                <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
+            {% endfor %}
+            
+            <li class="apply-topbar-button"><a href="http://worldcampus.psu.edu" target="_blank">Apply</a></li>
+            <!-- search bar -->
+            <!-- <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li> -->
+
           </ul>
+
         </div>
       </div>
-  </div>
-  <div class="row center">
-    <div class="column">
-      <h1 class="center small-push-5">{{ page.title }} 
-        </br> <span style="font-style: italic;">"Design Quote or Testimonial"</span>
-      </h1>
     </div>
   </div>
-</div>
-  <div class="row">
-    <div class="button-group small-12 ">
-      <a href="#" class="button expand small-6">Pathways</a>
-      <a href="#" class="button expand small-6">Curriculum</a>
-    </div>
-  </div>
-<br/>
-<div class='column row' id="content">
-<h2>{{ page.title }}</h2>
-  <p class='text-center'>Ut nulla. Vivamus bibendum, nulla ut congue fringilla, lorem ipsum ultricies risus, ut rutrum velit tortor vel purus. In hac habitasse platea dictumst. Duis fermentum, metus sed congue gravida, arcu dui ornare urna, ut imperdiet enim odio dignissim ipsum. Nulla facilisi. Cras magna ante, bibendum sit amet, porta vitae, laoreet ut, justo. Nam tortor sapien, pulvinar nec, malesuada in, ultrices in, tortor. Cras ultricies placerat eros. Quisque odio eros, feugiat non, iaculis nec, lobortis sed, arcu. Pellentesque sit amet sem et purus pretium consectetuer.
+  <!-- END TOP BAR -->
 
-  Ut nulla. Vivamus bibendum, nulla ut congue fringilla, lorem ipsum ultricies risus, ut rutrum velit tortor vel purus. In hac habitasse platea dictumst. Duis fermentum, metus sed congue gravida, arcu dui ornare urna, ut imperdiet enim odio dignissim ipsum. Nulla facilisi. Cras magna ante, bibendum sit amet, porta vitae, laoreet ut, justo. Nam tortor sapien, pulvinar nec, malesuada in, ultrices in, tortor. Cras ultricies placerat eros. Quisque odio eros, feugiat non, iaculis nec, lobortis sed, arcu. Pellentesque sit amet sem et purus pretium consectetuer.</p>
-  <div class="text-center">
-    <img class="thumbnail" src="http://placehold.it/300x300&text=content/100">
-    <img class="thumbnail" src="http://placehold.it/300x300&text=content/200">
-    <img class="thumbnail" src="http://placehold.it/300x300&text=content/300">
-    <img class="thumbnail" src="http://placehold.it/300x300&text=content/400">
-    <img class="thumbnail" src="http://placehold.it/300x300&text=content/500">
-    <img class="thumbnail" src="http://placehold.it/300x300&text=content/600">
+  <div class="row quote-row">
+    <div class="small-12 columns">
+      <h1 class="secondary-page-heading">{{ page.title }}</h1>
+    </div>
+    <div class="small-12 columns">
+      <h2 class="quote">"Design quote or testimonial."</h2>
+    </div>
+  </div>
+
+</div>
+<!-- END HEADER -->
+
+
+
+<!-- PATHWAYS -->
+<div class="row secondary-tabs-row">
+    <div class="small-8 medium-6 large-6 small-centered columns">
+      <ul class="tabs" data-tabs id="pathways-tabs">
+        <li class="tabs-title is-active"><a href="#pathways-panel" aria-selected="true">Pathways</a></li>
+        <li class="tabs-title"><a href="#curriculum-panel">Curriculum</a></li>
+      </ul>
+    </div>
+</div>
+<div class="row">
+  <div class="tabs-content small-12 columns" data-tabs-content="pathways-tabs">
+    <div class="tabs-panel is-active" id="pathways-panel">
+    <h2>{{ page.title }}</h2>
+    <p class='text-center'>Ut nulla. Vivamus bibendum, nulla ut congue fringilla, lorem ipsum ultricies risus, ut rutrum velit tortor vel purus. In hac habitasse platea dictumst. Duis fermentum, metus sed congue gravida, arcu dui ornare urna, ut imperdiet enim odio dignissim ipsum. Nulla facilisi. Cras magna ante, bibendum sit amet, porta vitae, laoreet ut, justo. Nam tortor sapien, pulvinar nec, malesuada in, ultrices in, tortor. Cras ultricies placerat eros. Quisque odio eros, feugiat non, iaculis nec, lobortis sed, arcu. Pellentesque sit amet sem et purus pretium consectetuer.
+
+    Ut nulla. Vivamus bibendum, nulla ut congue fringilla, lorem ipsum ultricies risus, ut rutrum velit tortor vel purus. In hac habitasse platea dictumst. Duis fermentum, metus sed congue gravida, arcu dui ornare urna, ut imperdiet enim odio dignissim ipsum. Nulla facilisi. Cras magna ante, bibendum sit amet, porta vitae, laoreet ut, justo. Nam tortor sapien, pulvinar nec, malesuada in, ultrices in, tortor. Cras ultricies placerat eros. Quisque odio eros, feugiat non, iaculis nec, lobortis sed, arcu. Pellentesque sit amet sem et purus pretium consectetuer.</p>
+    <div class="text-center">
+      <img class="thumbnail" src="http://placehold.it/300x300&text=content/100">
+      <img class="thumbnail" src="http://placehold.it/300x300&text=content/200">
+      <img class="thumbnail" src="http://placehold.it/300x300&text=content/300">
+      <img class="thumbnail" src="http://placehold.it/300x300&text=content/400">
+      <img class="thumbnail" src="http://placehold.it/300x300&text=content/500">
+      <img class="thumbnail" src="http://placehold.it/300x300&text=content/600">
+    </div>
+    </div>
+      <div class="tabs-panel" id="curriculum-panel">
+      <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+    </div>
   </div>
 </div>

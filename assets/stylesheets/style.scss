@@ -49,12 +49,15 @@
  @include foundation-tooltip;
  @include foundation-top-bar;
 
+@import 'settings';
 
 // Font-Awesome
 @import 'font-awesome/font-awesome';
 
 // Google fonts
 @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic);
+// Google fonts -- Lato
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 
 // Custom theme files
 @import 'theme';
