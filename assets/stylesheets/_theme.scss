@@ -5,6 +5,11 @@
 h1, h2, h3, h4, h5, h6{
 	font-weight: 700;
 }
+h3{
+	@media #{$small-only} {
+		font-size: 1.25rem;
+	}
+}
 
 // Sticky header
 .header {
@@ -46,30 +51,50 @@ h1, h2, h3, h4, h5, h6{
 // REQUEST INFORMATION ROW
 .request-callout{
 	padding: 3rem 0;
+	@media #{$small-only} {
+    	padding: 1.5rem;
+	}
 	h2.callout-heading{
 		margin-top: 4rem;
+		@media #{$small-only} {
+	    	margin-top: 1rem;
+		}	
 	}
 	h3{
 		margin-top: 3rem;
 	    font-style: italic;
 	    font-size: 1.5rem;
 	    padding-right: 6rem;
+	    @media #{$medium-only} {
+	    	padding-right: 3rem;
+	    }
+	    @media #{$small-only} {
+	    	padding-right: 0;
+	    	font-size: 1rem;
+	    	margin-top: 1rem;
+	    }
 	}
 	.request-form{
 		h3{
 			font-style: normal;
+			padding-right: 0;
 		}
 	}
 }
 
 // PATHS CALLOUT
 .paths-callout{
-
+	@media #{$small-only} {
+    	padding: 1.5rem;
+	}
 	background: linear-gradient(33deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.14)), 
 	url('../../assets/img/photo-1448932155749-638e51b56f03.jpeg') center center/cover no-repeat;
 
 	h2.callout-heading{
 		padding-top: 4rem;
+		@media #{$small-only} {
+    		padding-top: 1rem;
+		}
 	}
 	ul.pagination {
 		margin-top: 2rem;
@@ -126,6 +151,9 @@ h1, h2, h3, h4, h5, h6{
 // FACULTY CALLOUT
 .faculty-callout{
 	padding: 3rem 0;
+	@media #{$small-only} {
+    	padding: 1.5rem;
+	}
 	h2.callout-heading{
 		margin-bottom: 3rem;
 	}
