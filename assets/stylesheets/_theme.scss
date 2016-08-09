@@ -50,6 +50,9 @@ h3{
 }
 
 // REQUEST INFORMATION ROW
+.graph-texture{
+	background: url('../../assets/img/graphy.png');
+}
 .request-callout{
 	padding: 3rem 0;
 	@media #{$small-only} {
@@ -65,20 +68,34 @@ h3{
 		margin-top: 3rem;
 	    font-style: italic;
 	    font-size: 1.5rem;
-	    padding-right: 6rem;
-	    @media #{$medium-only} {
-	    	padding-right: 3rem;
-	    }
 	    @media #{$small-only} {
 	    	padding-right: 0;
 	    	font-size: 1rem;
 	    	margin-top: 1rem;
 	    }
 	}
-	.request-form{
-		h3{
-			font-style: normal;
-			padding-right: 0;
+	.request{
+		.request-form{
+			background: $white;
+			padding: 1rem 1.5rem;
+			@media #{$medium-only} {
+				padding: 0.85rem;
+			}
+			@media #{$small-only} {
+				margin-top: 1rem;
+			}
+			h3{
+				font-style: normal;
+				padding-right: 0;
+				margin-top: 0;
+				@media #{$medium-only} {
+					font-size: 1.25rem;
+					margin-top: 0;
+				}
+			}
+			.button{
+				margin-bottom: 0;
+			}
 		}
 	}
 }
