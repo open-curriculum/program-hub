@@ -4,13 +4,33 @@
 $header-height: 90vh;
 
 .top-bar{
+  @media #{$small-only}{
+    width: 100% !important;
+  }
   background: transparent;
   width: 100%;
+  #responsive-menu{
+    @media #{$small-only}{
+      width: 100%;
+      padding: 1rem;
+      background: $black;
+      .top-bar-right{
+        width: 100%;
+        .menu{
+          display: block !important;
+        }
+      }
+    }
+  }
   .top-bar-title{
+
+    @media #{$small-only}{
+      width: 100% !important;
+    }
 
     a.shield{
       img{
-        width: rem-calc(56);
+        max-width: rem-calc(56);
         height: rem-calc(61.813);
         @media #{$medium-only}{
 
@@ -18,22 +38,33 @@ $header-height: 90vh;
       }
     }
     a.masthead{
+      @media #{$small-only}{
+        display: block;
+        float: left;
+      }
       img{
-        width: rem-calc(280);
+        max-width: rem-calc(280);
         height: rem-calc(46.422);
         @media #{$medium-only}{
 
         }
       }
     }
+    span.menu-button {
+      @media #{$small-only}{
+        color: $white;
+        display: block;
+        float: right;
+      }
+    }
 
       @media #{$small-only} {
-        margin: 0 auto;
+        // margin: 0 auto;
       }
     }
     .nav-container{
-      @media #{$small-only} {
-        margin: 0 auto;
+      @media #{$small-only}, #{$medium-only} {
+        // margin: 0 auto;
         padding-top: 1rem;
       }
     }
@@ -49,6 +80,7 @@ $header-height: 90vh;
     @include border-radius(3px);
     font-weight: 700;
   }
+
 }
 
 svg {

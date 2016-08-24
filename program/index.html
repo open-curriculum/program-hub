@@ -7,31 +7,39 @@ title: The Program
 <div class="program-header">
   <!-- TOP BAR -->
   <div class="row">
-    <div class="top-bar stacked-for-medium">
+    <div class="top-bar">
       <div class="top-bar-title">
           <!-- <a class="shield" href="http://psu.edu"><img alt="The Penn State University Sheild" src="../assets/img/psu_arch_shield_blue.svg"/></a>
           <a class="masthead" href="/"><img alt="The College of Arts and Architecture Masthead" src="../assets/img/psu_arch_masthead_blue.svg"/></a> -->
           <a class="masthead" href="/"><img alt="The Pennsylvania State University" src="../assets/img/psu_shield.svg"/></a>
+
+    <span data-responsive-toggle="responsive-menu" data-hide-for="medium" class="menu-button">
+      <button class="menu-icon" type="button" data-toggle></button>
+    </span>
+
+
       </div>
-      <div class="nav-container">
-        <div class="top-bar-left"></div>
-        <div class="top-bar-right">
-          <ul class="menu">
-            {% for menuitem in site.menuitems %}
-            {% if menuitem.url == page.dir %}
-                {% assign class = "active" %}
-            {% else %}
-                {% assign class = "normal" %}
-            {% endif %}
-                <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
-            {% endfor %}
-            
-            <li class="apply-topbar-button"><a href="http://worldcampus.psu.edu" target="_blank">Apply</a></li>
-            <li><a href="#"><i class="fa fa-search"></i></a></li>
+      <div id="responsive-menu">
+        <!-- <div class="nav-container"> -->
+          <div class="top-bar-left"></div>
+          <div class="top-bar-right">
+            <ul class="menu">
+              {% for menuitem in site.menuitems %}
+              {% if menuitem.url == page.dir %}
+                  {% assign class = "active" %}
+              {% else %}
+                  {% assign class = "normal" %}
+              {% endif %}
+                  <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
+              {% endfor %}
+              
+              <li class="apply-topbar-button"><a href="http://worldcampus.psu.edu" target="_blank">Apply</a></li>
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
 
-          </ul>
+            </ul>
 
-        </div>
+          </div>
+        <!-- </div> -->
       </div>
     </div>
   </div>

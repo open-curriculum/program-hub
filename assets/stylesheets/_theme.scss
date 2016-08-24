@@ -6,6 +6,16 @@ h1, h2, h3, h4, h5, h6{
 	font-weight: 700;
 	font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
 }
+h1{
+	@media #{$medium-only} {
+		font-size: 2.25rem;
+	}
+}
+h2{
+	@media #{$medium-only} {
+		font-size: 1.75rem;
+	}
+}
 h3{
 	@media #{$small-only} {
 		font-size: 1.25rem;
@@ -207,6 +217,11 @@ h3{
 
 
 // SECONDARY PAGES
+.quote-row h1{
+	@media #{$small-only} {
+		margin-top: 1rem;
+	}
+}
 .secondary-page-heading,
 .quote{
 	text-align: center;
@@ -224,6 +239,12 @@ h3{
 	font-weight: 400;
     font-style: italic;
     font-size: 1.5rem;
+    @media #{$medium-only} {
+		font-size: 1.25rem;
+	}
+	@media #{$small-only} {
+		font-size: 1rem;
+	}
 }
 .tabs-content{
 	border: 0;
