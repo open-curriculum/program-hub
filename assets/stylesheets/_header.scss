@@ -83,6 +83,7 @@ $header-height: 90vh;
 
 }
 
+
 svg {
   //mix-blend-mode:multiply;
   // opacity:0.7;
@@ -119,6 +120,9 @@ h1 {
   text-align:left;
   font-weight: 400;
   line-height:2.8rem;
+  @media #{$small-only} {
+    line-height: 1;
+  }
   span {
     display:table;
   }
