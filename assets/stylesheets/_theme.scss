@@ -17,6 +17,9 @@ h2{
 	}
 }
 h3{
+	@media #{$medium-only} {
+		font-size: 1.5rem;
+	}
 	@media #{$small-only} {
 		font-size: 1.25rem;
 	}
@@ -73,7 +76,7 @@ h3{
 	background: url('../../assets/img/graphy.png');
 }
 .request-callout{
-	padding: 3rem 0;
+	padding: 3rem 1rem;
 	@media #{$small-only} {
     	padding: 1.5rem;
 	}
@@ -121,6 +124,7 @@ h3{
 
 // PATHS CALLOUT
 .paths-callout{
+	padding: 0 1rem;
 	@media #{$small-only} {
     	padding: 1.5rem;
 	}
@@ -187,7 +191,7 @@ h3{
 
 // FACULTY CALLOUT
 .faculty-callout{
-	padding: 3rem 0;
+	padding: 3rem 1rem;
 	@media #{$small-only} {
     	padding: 1.5rem;
 	}
@@ -210,6 +214,12 @@ h3{
 	a.button{
 		font-size: 1.5rem;
     	font-weight: 700;
+    	@media #{$medium-only} {
+    		font-size: 1.125rem;
+		}
+		@media #{$small-only} {
+    		font-size: 1rem;
+		}
 	}
 }
 
@@ -290,6 +300,7 @@ h3{
 }
 
 // ACCORDION GROUP
+
 .accordion-group{
 	// ul.vertical.menu > li > a{
 		
@@ -309,6 +320,12 @@ h3{
 			padding: 2rem 1rem;
 			&:hover{
 				background: #f0faff;
+			}
+			@media #{$medium-only} {
+				font-size: 1.25rem;
+			}
+			@media #{$small-only} {
+				font-size: 1.125rem;
 			}
 		}
 		> li > ul {
