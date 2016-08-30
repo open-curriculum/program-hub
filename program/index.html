@@ -63,20 +63,14 @@ title: The Program
 <div class="row secondary-tabs-row">
     <div class="small-9 medium-8 large-6 small-centered columns">
       <ul class="tabs" data-tabs id="pathways-tabs">
-        <li class="tabs-title tabs-first is-active"><a href="#pathways-panel" aria-selected="true">Pathways</a></li>
         <li class="tabs-title tabs-second"><a href="#curriculum-panel">Curriculum</a></li>
+        <li class="tabs-title tabs-first is-active"><a href="#pathways-panel" aria-selected="true">Pathways</a></li>
       </ul>
     </div>
 </div>
 <div class="row">
   <div class="tabs-content small-12 columns" data-tabs-content="pathways-tabs">
-      <div class="tabs-panel is-active" id="pathways-panel">
-        <h2>{{ page.title }}</h2>
-        <p></p>
-        <div class="text-center">
-          <!-- {% include lattice-paths.html %} -->
-        </div>
-    </div>
+      
       <div class="tabs-panel" id="curriculum-panel">
       
       <h2>Curriculum</h2>
@@ -152,6 +146,13 @@ title: The Program
             </ul>
           </li>
         </ul>
+      </div>
+      <div class="tabs-panel is-active" id="pathways-panel">
+        <h2>{{ page.title }}</h2>
+        <p></p>
+        <div class="text-center">
+          <!-- {% include lattice-paths.html %} -->
+        </div>
       </div>
     </div>
   </div>
