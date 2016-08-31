@@ -55,14 +55,14 @@
 @import 'font-awesome/font-awesome';
 
 // Google fonts
-@import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic);
-// Google fonts -- Lato
+// @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Exo+2:600);
 
 // Custom theme files
 @import 'theme';
-
 @import 'syntax';
 @import 'header';
+@import 'footer';
 @import 'circles';
 
