@@ -104,7 +104,6 @@ svg {
 
 .svg-header {
   text-align:center;
-  padding-bottom:4rem;
   //height:$header-height;
   // background-image:url("https://images.unsplash.com/photo-1439337153520-7082a56a81f4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3ea5378fcfec4b870de0c6c3dbe271b3");
 
@@ -131,13 +130,18 @@ h1 {
 
 }
 
+.header-content {
+  margin-top:20vh;
+  margin-bottom:20vh;
+}
+
 // flex stuff
 .center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   // height:$header-height;
-  margin-top: 20vh;
+  // margin-top: 20vh;
   resize: vertical;
   .right-justify {
     align-self:flex-end;
