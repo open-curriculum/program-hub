@@ -3,4 +3,13 @@
 	color:#efefef;
 	padding-top:12vh;
 	padding-bottom:12vh;
+
+	.a.expanded.button {
+		background-color: transparent;
+    	border: 1px solid #fff;
+
+    	&:hover {
+    		background-color: rgba(255,255,255,0.1);
+    	}
+	}
 }
