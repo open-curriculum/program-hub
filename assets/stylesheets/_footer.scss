@@ -1,3 +1,6 @@
+// Colors
+$btn-color-1:#FF9800; //Orange
+
 .footer {
 	background-color: #333;
 	color:#efefef;
@@ -5,11 +8,12 @@
 	padding-bottom:12vh;
 
 	a.expanded.button {
-		background-color: transparent;
-    	border: 1px solid #fff;
+		    background-color: transparent;
+    		border: 1px solid $btn-color-1;
+    		border-radius: 5px;
 
-    	&:hover {
-    		background-color: rgba(255,255,255,0.1);
+    	&:hover, &:focus {
+    		background-color: $btn-color-1;
     	}
 	}
 }
