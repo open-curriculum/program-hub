@@ -1,6 +1,12 @@
 //
 // Foundation-Jekyll - Custom Theme Styles
 //
+$main-accent-color:#FF9800;
+input.button, .top-bar li.apply-topbar-button a, {
+	background-color:$color-1;
+    border-color:$color-1;
+}
+
 
 h1, h2, h3, h4, h5, h6{
 	font-weight: 700;

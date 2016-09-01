@@ -2,7 +2,7 @@
 
 //Math
 $header-height: 90vh;
-
+$apply-btn-color:#FF9800;
 .top-bar{
   @media #{$small-only}{
     width: 100% !important;
@@ -76,7 +76,7 @@ $header-height: 90vh;
     color: $white;
   }
   li.apply-topbar-button a {
-    background: $blue;
+    background: $apply-btn-color;
     @include border-radius(3px);
     font-weight: 700;
   }
@@ -108,7 +108,7 @@ svg {
   // background-image:url("https://images.unsplash.com/photo-1439337153520-7082a56a81f4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3ea5378fcfec4b870de0c6c3dbe271b3");
 
   background: linear-gradient(33deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), 
-  url('https://images.unsplash.com/photo-1439337153520-7082a56a81f4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3ea5378fcfec4b870de0c6c3dbe271b3') center center/cover no-repeat;
+  url('../../assets/img/getty-header.jpg') center center/cover no-repeat;
 
   background-size:cover;
   background-position:bottom;
