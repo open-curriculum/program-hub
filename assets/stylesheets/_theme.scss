@@ -46,9 +46,9 @@ input.button, .top-bar li.apply-topbar-button a {
   animation: button3 60s infinite ease-in-out;
 }
 $color-1:#333333; //charcoal
-$color-2:#cddc39; //green-yellow
+$color-2:#81D4FA; //blue
 $color-3:#fb8c00; //orange
-$color-4:#81D4FA; //blue
+$color-4:#cddc39; //green-yellow
 
 @keyframes polygon {
   0%, 100% {
@@ -88,6 +88,9 @@ $color-4:#81D4FA; //blue
   40% {
     background-color:$color-3;
   }
+  80% {
+    background-color: $color-4;
+  }
 }
 @keyframes button2 {
   0%, 100% {
@@ -98,6 +101,9 @@ $color-4:#81D4FA; //blue
   }
   40% {
     border-color:$color-3;
+  }
+  80% {
+    border-color: $color-4;
   }
 }
 @keyframes button3 {
@@ -112,6 +118,10 @@ $color-4:#81D4FA; //blue
   40% {
     background-color:$color-3;
     border-color:$color-3;
+  }
+  80% {
+     background-color:$color-4;
+    border-color:$color-4;
   }
 }
 
