@@ -36,11 +36,8 @@ h3{
 .callout-heading:after{
   animation: callout 60s infinite ease-in-out;
 }
-input.button, .top-bar li.apply-topbar-button a {
+input.button, .top-bar li.apply-topbar-button a, .footer {
   animation: button 60s infinite ease-in-out;
-}
-.footer {
-	animation: footer 60s infinite ease-in-out;
 }
 // .footer a.expanded.button {
 //   animation: button2 60s infinite ease-in-out;
@@ -81,7 +78,7 @@ $color-4:#cddc39; //green-yellow
     stroke: $color-4;
   }
 }
-@keyframes button, footer {
+@keyframes button {
   0%, 100% {
     background-color:$color-1;
   }
