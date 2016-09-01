@@ -158,7 +158,7 @@ h3{
 	    width: rem-calc(79);
 	    margin-top: 0.5rem;
 	    @media #{$small-only} {
-	    	border: 1px solid $blue;
+	    	border: 1px solid $main-accent-color;
 	    	width: rem-calc(50);
 	    }
 	}
@@ -439,6 +439,9 @@ svg#lattice-paths {
 	// ul.vertical.menu > li > ul{
 		
 	// }
+	.is-accordion-submenu-parent>a::after {
+		border-color:$main-accent-color;
+	}
 	ul.vertical.menu{
 		border-bottom: 1px solid #e7e7e7;
 		
