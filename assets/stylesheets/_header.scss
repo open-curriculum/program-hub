@@ -11,9 +11,14 @@ $main-accent-color:#ff5722;
   width: 100%;
   #responsive-menu{
     @media #{$small-only}{
-      width: 100%;
+      width: 90%;
       padding: 1rem;
       background: $black;
+      // Z-INDEX FIX
+      right: 5% !important;
+      position: absolute !important;
+      top: 100px !important;
+      z-index: 100 !important;
       .top-bar-right{
         width: 100%;
         .menu{
