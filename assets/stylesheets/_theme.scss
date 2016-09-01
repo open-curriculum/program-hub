@@ -40,79 +40,63 @@ input.button, .top-bar li.apply-topbar-button a {
 .footer a.expanded.button:hover {
   animation: button3 60s infinite ease-in-out;
 }
-$color-1:#ffffff;
-$color-2:#b2ebf2;
+$color-1:#cddc39;
+$color-2:#9c27b0;
 $color-3:#fb8c00;
-$color-4:#cddc39;
 
 @keyframes polygon {
   0%, 100% {
     stroke: $color-1;
   }
-  25% {
+  25%, 75% {
     stroke: $color-2;
   }
   50% {
     stroke: $color-3;
-  }
-  75% {
-    stroke: $color-4;
   }
 }
 @keyframes callout {
   0%, 100% {
     border-color:$color-1;
   }
-  25% {
+  25%, 75% {
     border-color:$color-2;
   }
   50% {
     border-color:$color-3;
-  }
-  75% {
-    border-color:$color-4;
   }
 }
 @keyframes button {
   0%, 100% {
     background-color:$color-1;
   }
-  25% {
+  25%, 75% {
     background-color:$color-2;
   }
   50% {
     background-color:$color-3;
-  }
-  75% {
-    background-color:$color-4;
   }
 }
 @keyframes button2 {
   0%, 100% {
     border-color:$color-1;
   }
-  25% {
+  25%, 75% {
     border-color:$color-2;
   }
   50% {
     border-color:$color-3;
-  }
-  75% {
-   border-color:$color-4;
   }
 }
 @keyframes button3 {
   0%, 100% {
     background-color:$color-1;
   }
-  25% {
+  25%, 75% {
     background-color:$color-2;
   }
   50% {
     background-color:$color-3;
-  }
-  75% {
-   background-color:$color-4;
   }
 }
 
