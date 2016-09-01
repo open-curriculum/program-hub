@@ -104,7 +104,7 @@ svg {
 
 .svg-header {
   text-align:center;
-  background: linear-gradient(33deg, rgba(132, 211, 255, 0.46), rgba(154, 96, 45, 0.75)), url('../../assets/img/getty-header.jpg') center center/cover no-repeat;
+  background: linear-gradient(33deg, rgba(132, 211, 255, 0.25), rgba(0, 0, 0, 0.25)), url('../../assets/img/getty-header.jpg') center center/cover no-repeat;
   background-size:cover;
   background-position:bottom;
 //   background-color: $blue;
@@ -154,7 +154,7 @@ h1 {
 .program-header {
   text-align: center;
   height: 56vh;
-  background: linear-gradient(33deg, rgba(132, 211, 255, 0.46), rgba(154, 96, 45, 0.75)), 
+  background: linear-gradient(33deg, rgba(132, 211, 255, 0.25), rgba(0, 0, 0, 0.5)), 
   url('../../assets/img/program-header.jpg') center center/cover no-repeat;
   // background-size: cover;
   // background-position: center;
@@ -165,7 +165,7 @@ h1 {
 .about-header {
   text-align: center;
   height: 56vh;
-  background: linear-gradient(33deg, rgba(132, 211, 255, 0.46), rgba(154, 96, 45, 0.75)), 
+  background: linear-gradient(33deg, rgba(132, 211, 255, 0.25), rgba(0, 0, 0, 0.50)), 
   url('../../assets/img/about-header.jpg') center center/cover no-repeat;
   // background-size: cover;
   // background-position: center;
