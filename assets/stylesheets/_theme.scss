@@ -39,12 +39,15 @@ h3{
 input.button, .top-bar li.apply-topbar-button a {
   animation: button 60s infinite ease-in-out;
 }
-.footer a.expanded.button {
-  animation: button2 60s infinite ease-in-out;
+.footer {
+	animation: footer 60s infinite ease-in-out;
 }
-.footer a.expanded.button:hover {
-  animation: button3 60s infinite ease-in-out;
-}
+// .footer a.expanded.button {
+//   animation: button2 60s infinite ease-in-out;
+// }
+// .footer a.expanded.button:hover {
+//   animation: button3 60s infinite ease-in-out;
+// }
 $color-1:#333333; //charcoal
 $color-2:#81D4FA; //blue
 $color-3:#fb8c00; //orange
@@ -54,13 +57,13 @@ $color-4:#cddc39; //green-yellow
   0%, 100% {
     stroke: $color-1;
   }
-  20%, 60% {
+  20%, 80% {
     stroke: $color-2;
   }
   40% {
     stroke: $color-3;
   }
-  80% {
+  60% {
     stroke: $color-4;
   }
 }
@@ -68,62 +71,62 @@ $color-4:#cddc39; //green-yellow
   0%, 100% {
     border-color:$color-1;
   }
-  20%, 60% {
+  20%, 80% {
     border-color:$color-2;
   }
   40% {
     border-color:$color-3;
   }
-  80% {
+  60% {
     stroke: $color-4;
   }
 }
-@keyframes button {
+@keyframes button, footer {
   0%, 100% {
     background-color:$color-1;
   }
-  20%, 60% {
+  20%, 80% {
     background-color:$color-2;
   }
   40% {
     background-color:$color-3;
   }
-  80% {
+  60% {
     background-color: $color-4;
   }
 }
-@keyframes button2 {
-  0%, 100% {
-    border-color:$color-1;
-  }
-  20%, 60% {
-    border-color:$color-2;
-  }
-  40% {
-    border-color:$color-3;
-  }
-  80% {
-    border-color: $color-4;
-  }
-}
-@keyframes button3 {
-  0%, 100% {
-    background-color:$color-1;
-    border-color:$color-1;
-  }
-  20%, 60% {
-    background-color:$color-2;
-    border-color:$color-2;
-  }
-  40% {
-    background-color:$color-3;
-    border-color:$color-3;
-  }
-  80% {
-     background-color:$color-4;
-    border-color:$color-4;
-  }
-}
+// @keyframes button2 {
+//   0%, 100% {
+//     border-color:$color-1;
+//   }
+//   20%, 80% {
+//     border-color:$color-2;
+//   }
+//   40% {
+//     border-color:$color-3;
+//   }
+//   60% {
+//     border-color: $color-4;
+//   }
+// }
+// @keyframes button3 {
+//   0%, 100% {
+//     background-color:$color-1;
+//     border-color:$color-1;
+//   }
+//   20%, 80% {
+//     background-color:$color-2;
+//     border-color:$color-2;
+//   }
+//   40% {
+//     background-color:$color-3;
+//     border-color:$color-3;
+//   }
+//   60% {
+//      background-color:$color-4;
+//     border-color:$color-4;
+//   }
+// }
 
 // Sticky header
 .header {

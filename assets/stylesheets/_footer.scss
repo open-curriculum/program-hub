@@ -1,8 +1,8 @@
 // Colors
-$btn-color-1:#FF9800; //Orange
+$btn-color-1:#fff; //white
 
 .footer {
-	background-color: #333;
+	background-color: #607D8B;
 	color:#efefef;
 	padding-top:12vh;
 	padding-bottom:12vh;
@@ -14,6 +14,7 @@ $btn-color-1:#FF9800; //Orange
 
     	&:hover, &:focus {
     		background-color: $btn-color-1;
+    		color:#333;
     	}
 	}
 }
