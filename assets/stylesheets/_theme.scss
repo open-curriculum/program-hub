@@ -1,10 +1,10 @@
 //
 // Foundation-Jekyll - Custom Theme Styles
 //
-$main-accent-color:#FF9800;
-input.button, .top-bar li.apply-topbar-button a, {
-	background-color:$main-accent-color;
-}
+// $main-accent-color:#FF9800;
+// input.button, .top-bar li.apply-topbar-button a, {
+// 	background-color:$main-accent-color;
+// }
 
 
 h1, h2, h3, h4, h5, h6{
@@ -29,84 +29,84 @@ h3{
 		font-size: 1.25rem;
 	}
 }
-// // Animation TOO PROCESSOR INTENSIVE!
-// polygon {
-//   animation: polygon 60s infinite ease-in-out;
-// }
-// .callout-heading:after{
-//   animation: callout 60s infinite ease-in-out;
-// }
-// input.button, .top-bar li.apply-topbar-button a {
-//   animation: button 60s infinite ease-in-out;
-// }
-// .footer a.expanded.button {
-//   animation: button2 60s infinite ease-in-out;
-// }
-// .footer a.expanded.button:hover {
-//   animation: button3 60s infinite ease-in-out;
-// }
-// $color-1:#cddc39; //blue
-// $color-2:#9c27b0; //purple
-// $color-3:#fb8c00; //orange
+// Animation TOO PROCESSOR INTENSIVE!
+polygon {
+  animation: polygon 60s infinite ease-in-out;
+}
+.callout-heading:after{
+  animation: callout 60s infinite ease-in-out;
+}
+input.button, .top-bar li.apply-topbar-button a {
+  animation: button 60s infinite ease-in-out;
+}
+.footer a.expanded.button {
+  animation: button2 60s infinite ease-in-out;
+}
+.footer a.expanded.button:hover {
+  animation: button3 60s infinite ease-in-out;
+}
+$color-1:#cddc39; //blue
+$color-2:#9c27b0; //purple
+$color-3:#fb8c00; //orange
 
-// @keyframes polygon {
-//   0%, 100% {
-//     stroke: $color-1;
-//   }
-//   25%, 75% {
-//     stroke: $color-2;
-//   }
-//   50% {
-//     stroke: $color-3;
-//   }
-// }
-// @keyframes callout {
-//   0%, 100% {
-//     border-color:$color-1;
-//   }
-//   25%, 75% {
-//     border-color:$color-2;
-//   }
-//   50% {
-//     border-color:$color-3;
-//   }
-// }
-// @keyframes button {
-//   0%, 100% {
-//     background-color:$color-1;
-//   }
-//   25%, 75% {
-//     background-color:$color-2;
-//   }
-//   50% {
-//     background-color:$color-3;
-//   }
-// }
-// @keyframes button2 {
-//   0%, 100% {
-//     border-color:$color-1;
-//   }
-//   25%, 75% {
-//     border-color:$color-2;
-//   }
-//   50% {
-//     border-color:$color-3;
-//   }
-// }
-// @keyframes button3 {
-//   0%, 100% {
-//     background-color:$color-1;
-//     border-color:$color-1;
-//   }
-//   25%, 75% {
-//     background-color:$color-2;
-//     border-color:$color-2;
-//   }
-//   50% {
-//     background-color:$color-3;
-//     border-color:$color-3;
-//   }
-// }
+@keyframes polygon {
+  0%, 100% {
+    stroke: $color-1;
+  }
+  25%, 75% {
+    stroke: $color-2;
+  }
+  50% {
+    stroke: $color-3;
+  }
+}
+@keyframes callout {
+  0%, 100% {
+    border-color:$color-1;
+  }
+  25%, 75% {
+    border-color:$color-2;
+  }
+  50% {
+    border-color:$color-3;
+  }
+}
+@keyframes button {
+  0%, 100% {
+    background-color:$color-1;
+  }
+  25%, 75% {
+    background-color:$color-2;
+  }
+  50% {
+    background-color:$color-3;
+  }
+}
+@keyframes button2 {
+  0%, 100% {
+    border-color:$color-1;
+  }
+  25%, 75% {
+    border-color:$color-2;
+  }
+  50% {
+    border-color:$color-3;
+  }
+}
+@keyframes button3 {
+  0%, 100% {
+    background-color:$color-1;
+    border-color:$color-1;
+  }
+  25%, 75% {
+    background-color:$color-2;
+    border-color:$color-2;
+  }
+  50% {
+    background-color:$color-3;
+    border-color:$color-3;
+  }
+}
 
 // Sticky header
 .header {
