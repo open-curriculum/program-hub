@@ -31,13 +31,13 @@ h3{
 }
 // Animation TOO PROCESSOR INTENSIVE!
 .svg-header #trilattice .a {
-  animation: polygon 60s infinite ease-in-out;
+  animation: polygon 100s infinite ease-in-out;
 }
 .callout-heading:after{
-  animation: callout 60s infinite ease-in-out;
+  animation: callout 100s infinite ease-in-out;
 }
 input.button, .top-bar li.apply-topbar-button a, .footer {
-  animation: button 60s infinite ease-in-out;
+  animation: button 100s infinite ease-in-out;
 }
 // .footer a.expanded.button {
 //   animation: button2 60s infinite ease-in-out;
