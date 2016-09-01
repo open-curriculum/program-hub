@@ -2,7 +2,7 @@
 
 //Math
 $header-height: 90vh;
-$apply-btn-color:#FF9800;
+$main-accent-color:#ff5722;
 .top-bar{
   @media #{$small-only}{
     width: 100% !important;
@@ -76,7 +76,7 @@ $apply-btn-color:#FF9800;
     color: $white;
   }
   li.apply-topbar-button a {
-    background: $apply-btn-color;
+    background: $main-accent-color;
     @include border-radius(3px);
     font-weight: 700;
   }

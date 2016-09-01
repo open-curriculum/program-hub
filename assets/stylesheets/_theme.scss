@@ -1,7 +1,8 @@
 //
 // Foundation-Jekyll - Custom Theme Styles
 //
-// $main-accent-color:#FF9800;
+$main-accent-color:#ff5722;
+$heading-color:#333333;
 // input.button, .top-bar li.apply-topbar-button a, {
 // 	background-color:$main-accent-color;
 // }
@@ -10,6 +11,7 @@
 h1, h2, h3, h4, h5, h6{
 	font-weight: 700;
 	font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
+	color:$heading-color;
 }
 h1{
 	@media #{$medium-only} {
@@ -29,69 +31,69 @@ h3{
 		font-size: 1.25rem;
 	}
 }
-// Animation TOO PROCESSOR INTENSIVE!
-.svg-header #trilattice .a {
-  animation: polygon 100s infinite ease-in-out;
-}
-.callout-heading:after{
-  animation: callout 100s infinite ease-in-out;
-}
-input.button, .top-bar li.apply-topbar-button a, .footer {
-  animation: button 100s infinite ease-in-out;
-}
+//// Animation TOO PROCESSOR INTENSIVE!
+// .svg-header #trilattice .a {
+//   animation: polygon 100s infinite ease-in-out;
+// }
+// .callout-heading:after{
+//   animation: callout 100s infinite ease-in-out;
+// }
+// input.button, .top-bar li.apply-topbar-button a, .footer {
+//   animation: button 100s infinite ease-in-out;
+// }
 // .footer a.expanded.button {
 //   animation: button2 60s infinite ease-in-out;
 // }
 // .footer a.expanded.button:hover {
 //   animation: button3 60s infinite ease-in-out;
 // }
-$color-1:#333333; //charcoal
-$color-2:#81D4FA; //blue
-$color-3:#fb8c00; //orange
-$color-4:#cddc39; //green-yellow
+// $color-1:#333333; //charcoal
+// $color-2:#81D4FA; //blue
+// $color-3:#fb8c00; //orange
+// $color-4:#cddc39; //green-yellow
 
-@keyframes polygon {
-  0%, 100% {
-    stroke: $color-1;
-  }
-  20%, 80% {
-    stroke: $color-2;
-  }
-  40% {
-    stroke: $color-3;
-  }
-  60% {
-    stroke: $color-4;
-  }
-}
-@keyframes callout {
-  0%, 100% {
-    border-color:$color-1;
-  }
-  20%, 80% {
-    border-color:$color-2;
-  }
-  40% {
-    border-color:$color-3;
-  }
-  60% {
-    stroke: $color-4;
-  }
-}
-@keyframes button {
-  0%, 100% {
-    background-color:$color-1;
-  }
-  20%, 80% {
-    background-color:$color-2;
-  }
-  40% {
-    background-color:$color-3;
-  }
-  60% {
-    background-color: $color-4;
-  }
-}
+// @keyframes polygon {
+//   0%, 100% {
+//     stroke: $color-1;
+//   }
+//   20%, 80% {
+//     stroke: $color-2;
+//   }
+//   40% {
+//     stroke: $color-3;
+//   }
+//   60% {
+//     stroke: $color-4;
+//   }
+// }
+// @keyframes callout {
+//   0%, 100% {
+//     border-color:$color-1;
+//   }
+//   20%, 80% {
+//     border-color:$color-2;
+//   }
+//   40% {
+//     border-color:$color-3;
+//   }
+//   60% {
+//     stroke: $color-4;
+//   }
+// }
+// @keyframes button {
+//   0%, 100% {
+//     background-color:$color-1;
+//   }
+//   20%, 80% {
+//     background-color:$color-2;
+//   }
+//   40% {
+//     background-color:$color-3;
+//   }
+//   60% {
+//     background-color: $color-4;
+//   }
+// }
 // @keyframes button2 {
 //   0%, 100% {
 //     border-color:$color-1;
@@ -152,7 +154,7 @@ $color-4:#cddc39; //green-yellow
 	&:after{
 		content:' ';
 	    display:block;
-	    border: 2px solid $blue;
+	    border: 2px solid $main-accent-color;
 	    width: rem-calc(79);
 	    margin-top: 0.5rem;
 	    @media #{$small-only} {
@@ -167,7 +169,7 @@ $color-4:#cddc39; //green-yellow
 	stroke: #ffffff;
 }
 .svg-header h1 {
-	color:#ffffff;
+	color:$heading-color;
 	font-weight:700;
 }
 
