@@ -24,6 +24,97 @@ h3{
 		font-size: 1.25rem;
 	}
 }
+// Animation
+polygon {
+  animation: polygon 60s infinite ease-in-out;
+}
+.callout-heading:after{
+  animation: callout 60s infinite ease-in-out;
+}
+input.button, .top-bar li.apply-topbar-button a {
+  animation: button 60s infinite ease-in-out;
+}
+.footer a.expanded.button {
+  animation: button2 60s infinite ease-in-out;
+}
+.footer a.expanded.button:hover {
+  animation: button3 60s infinite ease-in-out;
+}
+$color-1:#ffffff;
+$color-2:#b2ebf2;
+$color-3:#fb8c00;
+$color-4:#cddc39;
+
+@keyframes polygon {
+  0%, 100% {
+    stroke: $color-1;
+  }
+  25% {
+    stroke: $color-2;
+  }
+  50% {
+    stroke: $color-3;
+  }
+  75% {
+    stroke: $color-4;
+  }
+}
+@keyframes callout {
+  0%, 100% {
+    border-color:$color-1;
+  }
+  25% {
+    border-color:$color-2;
+  }
+  50% {
+    border-color:$color-3;
+  }
+  75% {
+    border-color:$color-4;
+  }
+}
+@keyframes button {
+  0%, 100% {
+    background-color:$color-1;
+  }
+  25% {
+    background-color:$color-2;
+  }
+  50% {
+    background-color:$color-3;
+  }
+  75% {
+    background-color:$color-4;
+  }
+}
+@keyframes button2 {
+  0%, 100% {
+    border-color:$color-1;
+  }
+  25% {
+    border-color:$color-2;
+  }
+  50% {
+    border-color:$color-3;
+  }
+  75% {
+   border-color:$color-4;
+  }
+}
+@keyframes button3 {
+  0%, 100% {
+    background-color:$color-1;
+  }
+  25% {
+    background-color:$color-2;
+  }
+  50% {
+    background-color:$color-3;
+  }
+  75% {
+   background-color:$color-4;
+  }
+}
 
 // Sticky header
 .header {
