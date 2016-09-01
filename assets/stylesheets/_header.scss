@@ -13,7 +13,7 @@ $main-accent-color:#ff5722;
     @media #{$small-only}{
       width: 90%;
       padding: 1rem;
-      background: $black;
+      background: #333333;
       // Z-INDEX FIX
       right: 5% !important;
       position: absolute !important;
