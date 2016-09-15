@@ -37,12 +37,12 @@ exclude:            [
 ## CUSTOM VARS
 
 #ga_id:             ##-########-###
-site_name:          Foundation-Jekyll
-site_description :  Website description
+site_name:          DMD
+site_description :  
 site_copyright:     Copyright (c) 2016
 site_url:           http://www.open-curriculum.org/program-hub
-site_email:         site email
-site_phone:         (555) 555-1234
+site_email:         
+site_phone:         
 
 
 

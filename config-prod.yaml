@@ -1,0 +1,19 @@
+url: dmd.psu.edu # the base hostname & protocol for your site
+baseurl: ""
+
+#ga_id:             ##-########-###
+site_name:          DMD
+site_description :  
+site_copyright:     Copyright (c) 2016
+site_url:           dmd.psu.edu
+site_email:         dmd@psu.edu
+site_phone:         
+
+#Navigation
+menuitems:
+  - url: /
+    title: Home
+  - url: /program/
+    title: Program
+  - url: /about/
+    title: About
