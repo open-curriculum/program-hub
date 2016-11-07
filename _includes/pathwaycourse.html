@@ -1,0 +1,20 @@
+<!-- ACCORDION -->
+<div class="accordion-group">
+    <ul class="vertical menu" data-accordion-menu>
+      <li class="accordion-group-tab">
+      	{% for pathway in site.pathways %}
+        <a href="{{pathway.title}}">{{ pathway.title }} </a>
+          <ul class="menu vertical nested">
+		  	{% assign sorted = (site.courses | sort: 'number') %}
+		  	{% for course in sorted %}
+		      <li>
+		        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
+		        <h4> {{ course.title }} </h4>
+		        <p> {{ course.description }}</p>
+		      </li>
+		  	{% endfor %}
+			</ul>
+		{% endfor %}
+		</li>
+	</ul>
+</div>

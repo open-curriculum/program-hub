@@ -36,6 +36,7 @@ exclude:            [
 
 ## CUSTOM VARS
 
+
 #ga_id:             ##-########-###
 site_name:          DMD
 site_description :  
@@ -52,6 +53,10 @@ sass:
   sass_dir:          ./assets/stylesheets
   style:            :compressed
 
+# Collections 
+collections:
+  courses:
+  pathways:
  #  _   _     __      _______ _____       _______ _____ ____  _   _ 
  # | \ | |   /\ \    / /_   _/ ____|   /w\|__   __|_   _/ __ \| \ | |
  # |  \| |  /  \ \  / /  | || |  __   /  \  | |    | || |  | |  \| |
