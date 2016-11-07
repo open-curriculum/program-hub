@@ -1,3 +1,3 @@
 ---
-title: Media for Civil Development
+title: Media for Civic Engagement
 ---
