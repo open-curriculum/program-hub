@@ -6,54 +6,47 @@
 	        <a href="{{ pathway.title }}">{{ pathway.title }} </a>
 	          <ul class="menu vertical nested">
 	          	<li class="accordion-group-tab">
-          		<a href="#">Digital Multimedia Design</a>
+          		<a href="#">ART Requirements</a>
             		<ul class="menu vertical nested">
 		  			{% assign sorted = (site.courses | sort: 'number') %}
 		  			{% for course in sorted %}
+		  			{% if course.pathway-list contains pathway.title and course.number contains 'ART' %}
 		      			<li>
 					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
 					        <h4> {{ course.title }} </h4>
 					        <p> {{ course.description }}</p>
 		      			</li>
+		  			{% endif %}
 		  			{% endfor %}
 					</ul>
 				</li>
 				<li class="accordion-group-tab">
-          		<a href="#">School of Visual Arts</a>
+          		<a href="#">COMM Requirements</a>
             		<ul class="menu vertical nested">
 		  			{% assign sorted = (site.courses | sort: 'number') %}
 		  			{% for course in sorted %}
+		  			{% if course.pathway-list contains pathway.title and course.number contains 'COMM' %}
 		      			<li>
 					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
 					        <h4> {{ course.title }} </h4>
 					        <p> {{ course.description }}</p>
 		      			</li>
+		  			{% endif %}
 		  			{% endfor %}
 					</ul>
 				</li>
 				<li class="accordion-group-tab">
-          		<a href="#">College of Communications</a>
+          		<a href="#">IST Requirements</a>
             		<ul class="menu vertical nested">
 		  			{% assign sorted = (site.courses | sort: 'number') %}
 		  			{% for course in sorted %}
+		  			{% if course.pathway-list contains pathway.title and course.number contains 'IST' %}
 		      			<li>
 					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
 					        <h4> {{ course.title }} </h4>
 					        <p> {{ course.description }}</p>
 		      			</li>
-		  			{% endfor %}
-					</ul>
-				</li>
-				<li class="accordion-group-tab">
-          		<a href="#">College of Information Sciences and Technology</a>
-            		<ul class="menu vertical nested">
-		  			{% assign sorted = (site.courses | sort: 'number') %}
-		  			{% for course in sorted %}
-		      			<li>
-					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
-					        <h4> {{ course.title }} </h4>
-					        <p> {{ course.description }}</p>
-		      			</li>
+		  			{% endif %}
 		  			{% endfor %}
 					</ul>
 				</li>
