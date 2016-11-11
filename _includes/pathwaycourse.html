@@ -1,20 +1,64 @@
 <!-- ACCORDION -->
 <div class="accordion-group">
     <ul class="vertical menu" data-accordion-menu>
-      <li class="accordion-group-tab">
-      	{% for pathway in site.pathways %}
-        <a href="{{pathway.title}}">{{ pathway.title }} </a>
-          <ul class="menu vertical nested">
-		  	{% assign sorted = (site.courses | sort: 'number') %}
-		  	{% for course in sorted %}
-		      <li>
-		        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
-		        <h4> {{ course.title }} </h4>
-		        <p> {{ course.description }}</p>
-		      </li>
-		  	{% endfor %}
+    {% for pathway in site.pathways %}
+	    <li class="accordion-group-tab">
+	        <a href="{{ pathway.title }}">{{ pathway.title }} </a>
+	          <ul class="menu vertical nested">
+	          	<li class="accordion-group-tab">
+          		<a href="#">Digital Multimedia Design</a>
+            		<ul class="menu vertical nested">
+		  			{% assign sorted = (site.courses | sort: 'number') %}
+		  			{% for course in sorted %}
+		      			<li>
+					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
+					        <h4> {{ course.title }} </h4>
+					        <p> {{ course.description }}</p>
+		      			</li>
+		  			{% endfor %}
+					</ul>
+				</li>
+				<li class="accordion-group-tab">
+          		<a href="#">School of Visual Arts</a>
+            		<ul class="menu vertical nested">
+		  			{% assign sorted = (site.courses | sort: 'number') %}
+		  			{% for course in sorted %}
+		      			<li>
+					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
+					        <h4> {{ course.title }} </h4>
+					        <p> {{ course.description }}</p>
+		      			</li>
+		  			{% endfor %}
+					</ul>
+				</li>
+				<li class="accordion-group-tab">
+          		<a href="#">College of Communications</a>
+            		<ul class="menu vertical nested">
+		  			{% assign sorted = (site.courses | sort: 'number') %}
+		  			{% for course in sorted %}
+		      			<li>
+					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
+					        <h4> {{ course.title }} </h4>
+					        <p> {{ course.description }}</p>
+		      			</li>
+		  			{% endfor %}
+					</ul>
+				</li>
+				<li class="accordion-group-tab">
+          		<a href="#">College of Information Sciences and Technology</a>
+            		<ul class="menu vertical nested">
+		  			{% assign sorted = (site.courses | sort: 'number') %}
+		  			{% for course in sorted %}
+		      			<li>
+					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
+					        <h4> {{ course.title }} </h4>
+					        <p> {{ course.description }}</p>
+		      			</li>
+		  			{% endfor %}
+					</ul>
+				</li>
 			</ul>
-		{% endfor %}
 		</li>
+	{% endfor %}
 	</ul>
 </div>
