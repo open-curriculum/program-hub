@@ -3,5 +3,5 @@ title: Advanced Multimedia Production
 number: COMM 481
 description: EXAMPLE DESCRIPTION
 bulletin-link: http://bulletins.psu.edu/undergrad/courses/c/comm/481
-pathway-list:
+pathway-list: [Video Production]
 ---
