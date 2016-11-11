@@ -1,9 +1,9 @@
 <!-- ACCORDION -->
 <div class="accordion-group">
     <ul class="vertical menu" data-accordion-menu>
+    {% for pathway in site.pathways %}
       <li class="accordion-group-tab">
-      	{% for pathway in site.pathways %}
-        <a href="{{pathway.title}}">{{ pathway.title }} </a>
+        <a href="{{ pathway.title }}">{{ pathway.title }} </a>
           <ul class="menu vertical nested">
 		  	{% assign sorted = (site.courses | sort: 'number') %}
 		  	{% for course in sorted %}
@@ -14,7 +14,7 @@
 		      </li>
 		  	{% endfor %}
 			</ul>
-		{% endfor %}
 		</li>
+		{% endfor %}
 	</ul>
 </div>
