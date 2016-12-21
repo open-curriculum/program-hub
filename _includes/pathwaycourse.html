@@ -1,8 +1,9 @@
 <!-- ACCORDION -->
 <div class="accordion-group">
     <ul class="vertical menu" data-accordion-menu>
-    {% for pathway in site.pathways %}
+    	<!--this stupid part is being stupid... -->
 	    <li class="accordion-group-tab">
+    	{% for pathway in site.pathways %}
 	        <a href="{{ pathway.title }}">{{ pathway.title }} </a>
 	          <ul class="menu vertical nested">
 	  			{% assign sorted = (site.courses | sort: 'number') %}
@@ -11,9 +12,9 @@
 	  			{% for course in sorted %}
 		  			{% if course.pathway-list contains pathway.title and course.number contains 'ART' %}
 		  			<!-- Check if writeheaderbool is true -->
+	          		<li class="accordion-group-tab">
 			  			{% if writeheaderbool == true %}
 				  			<!-- If True -> write href header -->
-	          				<li class="accordion-group-tab">
 				  			<a href="#">ART Requirements</a>
 		            		<ul class="menu vertical nested">
 				  			<!-- Set writeheaderbool to false -->
@@ -26,40 +27,60 @@
 		      			</li>
 		  			{% endif %}
 	  			{% endfor %}
+	  			{% if writeheadbool == true %}
 	  				</ul>
-				</li>
-				<li class="accordion-group-tab">
-          		<a href="#">COMM Requirements</a>
-            		<ul class="menu vertical nested">
-		  			{% assign sorted = (site.courses | sort: 'number') %}
-		  			{% for course in sorted %}
+					</li>
+				{% endif %}
+	  			<!-- Set writeheaderbool = true -->
+  				{% assign writeheaderbool = true %}
+	  			{% for course in sorted %}
 		  			{% if course.pathway-list contains pathway.title and course.number contains 'COMM' %}
-		      			<li>
+		  			<!-- Check if writeheaderbool is true -->
+	          				<li class="accordion-group-tab">
+			  			{% if writeheaderbool == true %}
+				  			<!-- If True -> write href header -->
+				  			<a href="#">COMM Requirements</a>
+		            		<ul class="menu vertical nested">
+				  			<!-- Set writeheaderbool to false -->
+		      				{% assign writeheaderbool = false %}
+		  				{% endif %}
+		  				<li>
 					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
 					        <h4> {{ course.title }} </h4>
 					        <p> {{ course.description }}</p>
 		      			</li>
 		  			{% endif %}
-		  			{% endfor %}
-					</ul>
-				</li>
-				<li class="accordion-group-tab">
-          		<a href="#">IST Requirements</a>
-            		<ul class="menu vertical nested">
-		  			{% assign sorted = (site.courses | sort: 'number') %}
-		  			{% for course in sorted %}
+	  			{% endfor %}
+	  			{% if writeheadbool == true %}
+	  				</ul>
+					</li>
+				{% endif %}
+	  			<!-- Set writeheaderbool = true -->
+  				{% assign writeheaderbool = true %}
+	  			{% for course in sorted %}
 		  			{% if course.pathway-list contains pathway.title and course.number contains 'IST' %}
-		      			<li>
+		  			<!-- Check if writeheaderbool is true -->
+	          				<li class="accordion-group-tab">
+			  			{% if writeheaderbool == true %}
+				  			<!-- If True -> write href header -->
+				  			<a href="#">IST Requirements</a>
+		            		<ul class="menu vertical nested">
+				  			<!-- Set writeheaderbool to false -->
+		      				{% assign writeheaderbool = false %}
+		  				{% endif %}
+		  				<li>
 					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
 					        <h4> {{ course.title }} </h4>
 					        <p> {{ course.description }}</p>
 		      			</li>
 		  			{% endif %}
-		  			{% endfor %}
-					</ul>
-				</li>
+	  			{% endfor %}
+	  			{% if writeheadbool == true %}
+	  				</ul>
+					</li>
+				{% endif %}
 			</ul>
+		{% endfor %}
 		</li>
-	{% endfor %}
 	</ul>
 </div>
