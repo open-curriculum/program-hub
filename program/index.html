@@ -1,160 +1,139 @@
----
-layout: default
-title: The Program
----
-
+--- layout: default title: The Program ---
 <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode -->
 <div class="program-header">
-  <!-- TOP BAR -->
-  <div class="row">
-    <div class="top-bar">
-      <div class="top-bar-title">
-          <!-- <a class="shield" href="http://psu.edu"><img alt="The Penn State University Sheild" src="../assets/img/psu_arch_shield_blue.svg"/></a>
+    <!-- TOP BAR -->
+    <div class="row">
+        <div class="top-bar">
+            <div class="top-bar-title">
+                <!-- <a class="shield" href="http://psu.edu"><img alt="The Penn State University Sheild" src="../assets/img/psu_arch_shield_blue.svg"/></a>
           <a class="masthead" href="/"><img alt="The College of Arts and Architecture Masthead" src="../assets/img/psu_arch_masthead_blue.svg"/></a> -->
-          <a class="masthead" href="/"><img alt="The Pennsylvania State University" src="../assets/img/psu_shield.svg"/></a>
-
-    <span data-responsive-toggle="responsive-menu" data-hide-for="medium" class="menu-button">
+                <a class="masthead" href="/"><img alt="The Pennsylvania State University" src="../assets/img/psu_shield.svg" /></a>
+                <span data-responsive-toggle="responsive-menu" data-hide-for="medium" class="menu-button">
       <button class="menu-icon" type="button" data-toggle></button>
     </span>
-
-
-      </div>
-      <div id="responsive-menu">
-        <!-- <div class="nav-container"> -->
-          <div class="top-bar-left"></div>
-          <div class="top-bar-right">
-            <ul class="menu">
-              {% for menuitem in site.menuitems %}
-              {% if menuitem.url == page.dir %}
-                  {% assign class = "active" %}
-              {% else %}
-                  {% assign class = "normal" %}
-              {% endif %}
-                  <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
-              {% endfor %}
-              
-              <li class="apply-topbar-button"><a href="
+            </div>
+            <div id="responsive-menu">
+                <!-- <div class="nav-container"> -->
+                <div class="top-bar-left"></div>
+                <div class="top-bar-right">
+                    <ul class="menu">
+                        {% for menuitem in site.menuitems %} {% if menuitem.url == page.dir %} {% assign class = "active" %} {% else %} {% assign class = "normal" %} {% endif %}
+                        <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
+                        {% endfor %}
+                        <li class="apply-topbar-button"><a href="
 http://www.worldcampus.psu.edu/degrees-and-certificates/penn-state-online-digital-multimedia-design-bachelors-degree/overview" target="_blank">Apply</a></li>
-            </ul>
-
-          </div>
-        <!-- </div> -->
-      </div>
+                    </ul>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
     </div>
-  </div>
-  <!-- END TOP BAR -->
-
-  <div class="row quote-row">
-    <div class="small-12 columns">
-      <h1 class="secondary-page-heading">{{ page.title }}</h1>
+    <!-- END TOP BAR -->
+    <div class="row quote-row">
+        <div class="small-12 columns">
+            <h1 class="secondary-page-heading">{{ page.title }}</h1>
+        </div>
+        <div class="small-12 columns">
+            <h2 class="quote">Design your path</h2>
+        </div>
     </div>
-    <div class="small-12 columns">
-      <h2 class="quote">Design your path</h2>
-    </div>
-  </div>
-
 </div>
 <!-- END HEADER -->
-
-
-
 <!-- PATHWAYS -->
 <div class="row secondary-tabs-row">
     <div class="small-9 medium-8 large-6 small-centered columns">
-      <ul class="tabs" data-tabs id="pathways-tabs">
-        <li class="tabs-title tabs-first is-active"><a href="#curriculum-panel">Curriculum</a></li>
-        <li class="tabs-title tabs-second"><a href="#pathways-panel" aria-selected="true">Pathways</a></li>
-      </ul>
+        <ul class="tabs" data-tabs id="pathways-tabs">
+            <li class="tabs-title tabs-first is-active"><a href="#curriculum-panel">Curriculum</a></li>
+            <li class="tabs-title tabs-second"><a href="#pathways-panel" aria-selected="true">Pathways</a></li>
+        </ul>
     </div>
 </div>
 <div class="row head-spacing">
-  <div class="tabs-content small-12 columns" data-tabs-content="pathways-tabs">
-      
-      <div class="tabs-panel is-active" id="curriculum-panel">
-        <div class="row">
-          <div class="small-12 medium-6 columns">
-            <h3 class="callout-heading"><a href="http://www.worldcampus.psu.edu/degrees-and-certificates/penn-state-online-digital-multimedia-design-bachelors-degree/overview">Bachelor of Design in Digital Multimedia Design</a></h3>
-            <p>Credits: 120</p>
-          </div>
-          <div class="small-12 medium-6 columns">
-            <p>The Digital Multimedia Design program links courses from the College of Arts and Architecture, the College of Communications, and the College of IST at Penn State University. This interdisciplinary program introduces students to universal design concepts for creative problem solving. Learners will apply contemporary design methods to engage real-world issues in expressive and technical projects. Students will produce a digital portfolio over the duration of their studies and create a self-directed thesis project in their capstone semester.</p>
-          </div>
+    <div class="tabs-content small-12 columns" data-tabs-content="pathways-tabs">
+        <div class="tabs-panel is-active" id="curriculum-panel">
+            <div class="row">
+                <div class="small-12 medium-6 columns">
+                    <h3 class="callout-heading"><a href="http://www.worldcampus.psu.edu/degrees-and-certificates/penn-state-online-digital-multimedia-design-bachelors-degree/overview">Bachelor of Design in Digital Multimedia Design</a></h3>
+                    <p>Credits: 120</p>
+                </div>
+                <div class="small-12 medium-6 columns">
+                    <p>The Digital Multimedia Design program links courses from the College of Arts and Architecture, the College of Communications, and the College of IST at Penn State University. This interdisciplinary program introduces students to universal design concepts for creative problem solving. Learners will apply contemporary design methods to engage real-world issues in expressive and technical projects. Students will produce a digital portfolio over the duration of their studies and create a self-directed thesis project in their capstone semester.</p>
+                </div>
+            </div>
+            <!-- ACCORDION -->
+            <div class="accordion-group">
+                <ul class="vertical menu" data-accordion-menu>
+                    <li class="accordion-group-tab">
+                        <a href="#">Digital Multimedia Design</a>
+                        <ul class="menu vertical nested">
+                            <li>
+                                <h3><a href="http://bulletins.psu.edu/undergrad/courses/D/DMD/100">DMD 100</a></h3>
+                                <h4>Digital Multimedia Design Fundamentals</h4>
+                                <p>This course introduces students to concepts, skills, language and principles of practice in art and design, communication, and information sciences.</p>
+                            </li>
+                            <li>
+                                <h3><a href="http://bulletins.psu.edu/undergrad/courses/D/DMD/300">DMD 300</a></h3>
+                                <h4>Digital Multimedia Design Studio</h4>
+                                <p>In this course students synthesize concepts, theories, and applications acquired in introductory courses and think critically about their professional objectives.</p>
+                            </li>
+                            <li>
+                                <h3><a href="http://bulletins.psu.edu/undergrad/courses/D/DMD/400">DMD 400</a></h3>
+                                <h4>Digital Multimedia Design Capstone</h4>
+                                <p>In this capstone, students develop portfolio projects by applying creative production concepts, tools, and approaches to a contemporary issue.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="accordion-group-tab">
+                        <a href="#">School of Visual Arts</a>
+                        <ul class="menu vertical nested">
+                            <li>
+                                <h3><a href="http://bulletins.psu.edu/undergrad/courses/a/art/201">ART 201</a></h3>
+                                <h4>Intro to Digital Arts: Computer Graphics</h4>
+                                <p>This is a course in which the students work with raster graphic, vector graphics and text layout programs. The purpose of the course is to give an introduction to how computer hardware and software can be used to produce works of art and design, which can be exhibited electronically, and also in print. It provides the first step for students interested in realizing their artwork using computers to develop and realize it.</p>
+                            </li>
+                            <li>
+                                <h3><a href="http://bulletins.psu.edu/undergrad/courses/A/ART/211Y">ART 211Y</a></h3>
+                                <h4>Introduction to Digital Art and Design Criticism</h4>
+                                <p>Introduction to Digital Art and Design Criticism (3) An introduction to the language, aesthetics, and cultural impacts of digital art and design in contemporary society.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="accordion-group-tab">
+                        <a href="#">College of Communications</a>
+                        <ul class="menu vertical nested">
+                            <li>
+                                <h3><a href="http://bulletins.psu.edu/undergrad/courses/C/COMM/215">COMM 215</a></h3>
+                                <h4>Basic Photography for Communications</h4>
+                                <p>An introduction to photography as a means of visual communication in the digital age. Students will learn basic picture-taking principles, camera techniques, photographic aesthetics, and the use of digital imaging software. Students will be encouraged to explore photography as an aesthetic, expressive, and socially significant medium. This will be achieved through individual and group critique of each student's photographs, as well as through analysis of examples of the work of prominent photographers. Students will complete a series of assignments that help them learn to produce visual content for a digitally savvy audience. At the end of the semester, students will be able to produce story-telling images as well as write captions for their photographs. They will have a knowledge of the aesthetics of photography, will understand the importance of both form and content, and will have the ability to critically evaluate photographs.</p>
+                            </li>
+                            <li>
+                                <h3><a href="http://bulletins.psu.edu/undergrad/courses/I/COMM/230W">COMM 230W</a></h3>
+                                <h4>Writing for Media</h4>
+                                <p>This course is an introduction to writing for various kinds of mass communication media. Students will practice writing public relations news releases, public information announcements, print, television and radio advertisements, as well as news stories and editorials. Students will be given weekly writing assignments, some of which will be re-writes of earlier submissions. In-class exercises will include various writing exercises designed to get students more comfortable with writing for media.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="accordion-group-tab">
+                        <a href="#">College of Information Sciences and Technology</a>
+                        <ul class="menu vertical nested">
+                            <li>
+                                <h3><a href="http://bulletins.psu.edu/undergrad/courses/D/IST/140">IST 140</a></h3>
+                                <h4>Introduction to Application Development</h4>
+                                <p>This is a first course in application development. Applications are computer programs developed to support human activity in enterprise and other social contexts. Examples of applications might include programs to help run a business, manage personal information, or provide entertainment. The emphasis of this course is on learning to translate practical problems through domain analysis into software applications usable in a human or organizational context. It will focus on the knowledge needed to create applications that use high level programming languages, combining original code with existing code libraries and application programming interfaces (APIs).</p>
+                            </li>
+                            <li>
+                                <h3><a href="http://bulletins.psu.edu/undergrad/courses/C/IST/250/">IST 250</a></h3>
+                                <h4>New Media and the Web</h4>
+                                <p>This course provides an introduction to how the world wide web utilizes new media technologies. Students will acquire a sound conceptual understanding of how simple to complex web sites are constructed, and how this knowledge can be applied in their professional career.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-      <!-- ACCORDION -->
-      <div class="accordion-group">
-        <ul class="vertical menu" data-accordion-menu>
-          <li class="accordion-group-tab">
-            <a href="#">Digital Multimedia Design</a>
-              <ul class="menu vertical nested">
-                <li>
-                  <h3><a href="http://bulletins.psu.edu/undergrad/courses/D/DMD/100">DMD 100</a></h3>
-                  <h4>Digital Multimedia Design Fundamentals</h4>
-                  <p>This course introduces students to concepts, skills, language and principles of practice in art and design, communication, and information sciences.</p>
-                </li>
-                <li>
-                  <h3><a href="http://bulletins.psu.edu/undergrad/courses/D/DMD/300">DMD 300</a></h3>
-                  <h4>Digital Multimedia Design Studio</h4>
-                  <p>In this course students synthesize concepts, theories, and applications acquired in introductory courses and think critically about their professional objectives.</p>
-                </li>
-                <li>
-                  <h3><a href="http://bulletins.psu.edu/undergrad/courses/D/DMD/400">DMD 400</a></h3>
-                  <h4>Digital Multimedia Design Capstone</h4>
-                  <p>In this capstone, students develop portfolio projects by applying creative production concepts, tools, and approaches to a contemporary issue.</p>
-                </li>
-              </ul>
-          </li>
-          <li class="accordion-group-tab">
-            <a href="#">School of Visual Arts</a>
-              <ul class="menu vertical nested">
-                <li>
-                  <h3><a href="http://bulletins.psu.edu/undergrad/courses/a/art/201">ART 201</a></h3>
-                  <h4>Intro to Digital Arts: Computer Graphics</h4>
-                  <p>This is a course in which the students work with raster graphic, vector graphics and text layout programs. The purpose of the course is to give an introduction to how computer hardware and software can be used to produce works of art and design, which can be exhibited electronically, and also in print. It provides the first step for students interested in realizing their artwork using computers to develop and realize it.</p>
-                </li>
-                <li>
-                  <h3><a href="http://bulletins.psu.edu/undergrad/courses/A/ART/211Y">ART 211Y</a></h3>
-                  <h4>Introduction to Digital Art and Design Criticism</h4>
-                  <p>Introduction to Digital Art and Design Criticism (3) An introduction to the language, aesthetics, and cultural impacts of digital art and design in contemporary society.</p>
-                </li>
-              </ul>
-          </li>
-          <li class="accordion-group-tab">
-            <a href="#">College of Communications</a>
-              <ul class="menu vertical nested">
-                <li>
-                  <h3><a href="http://bulletins.psu.edu/undergrad/courses/C/COMM/215">COMM 215</a></h3>
-                  <h4>Basic Photography for Communications</h4>
-                  <p>An introduction to photography as a means of visual communication in the digital age. Students will learn basic picture-taking principles, camera techniques, photographic aesthetics, and the use of digital imaging software. Students will be encouraged to explore photography as an aesthetic, expressive, and socially significant medium. This will be achieved through individual and group critique of each student's photographs, as well as through analysis of examples of the work of prominent photographers. Students will complete a series of assignments that help them learn to produce visual content for a digitally savvy audience. At the end of the semester, students will be able to produce story-telling images as well as write captions for their photographs. They will have a knowledge of the aesthetics of photography, will understand the importance of both form and content, and will have the ability to critically evaluate photographs.</p>
-                </li>
-                <li>
-                  <h3><a href="http://bulletins.psu.edu/undergrad/courses/I/COMM/230W">COMM 230W</a></h3>
-                  <h4>Writing for Media</h4>
-                  <p>This course is an introduction to writing for various kinds of mass communication media. Students will practice writing public relations news releases, public information announcements, print, television and radio advertisements, as well as news stories and editorials. Students will be given weekly writing assignments, some of which will be re-writes of earlier submissions. In-class exercises will include various writing exercises designed to get students more comfortable with writing for media.</p>
-                </li>
-              </ul>
-          </li>
-          <li class="accordion-group-tab">
-          <a href="#">College of Information Sciences and Technology</a>
-            <ul class="menu vertical nested">
-                <li>
-                  <h3><a href="http://bulletins.psu.edu/undergrad/courses/D/IST/140">IST 140</a></h3>
-                  <h4>Introduction to Application Development</h4>
-                  <p>This is a first course in application development. Applications are computer programs developed to support human activity in enterprise and other social contexts. Examples of applications might include programs to help run a business, manage personal information, or provide entertainment. The emphasis of this course is on learning to translate practical problems through domain analysis into software applications usable in a human or organizational context. It will focus on the knowledge needed to create applications that use high level programming languages, combining original code with existing code libraries and application programming interfaces (APIs).</p>
-                </li>
-                <li>
-                  <h3><a href="http://bulletins.psu.edu/undergrad/courses/C/IST/250/">IST 250</a></h3>
-                  <h4>New Media and the Web</h4>
-                  <p>This course provides an introduction to how the world wide web utilizes new media technologies. Students will acquire a sound conceptual understanding of how simple to complex web sites are constructed, and how this knowledge can be applied in their professional career.</p>
-                </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+        <div class="tabs-panel" id="pathways-panel">
+            <h2 class="callout-heading">Pathways</h2> {% include pathwaycourse.html %}
+            <!-- </ul> -->
+        </div>
     </div>
-    <div class="tabs-panel" id="pathways-panel">
-        <h2 class="callout-heading">Pathways</h2>
-          {% include pathwaycourse.html %}
-        </ul>
-      </div>
-  </div>
 </div>
