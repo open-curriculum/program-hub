@@ -4,7 +4,7 @@
     	<!--this stupid part is being stupid... -->
 	    <li class="accordion-group-tab">
     	{% for pathway in site.pathways %}
-	        <a href="{{ pathway.title }}">{{ pathway.title }} </a>
+	        <a href="#{{ pathway.title | slugify }}">{{ pathway.title }} </a> 
 	          <ul class="menu vertical nested">
 	  			{% assign sorted = (site.courses | sort: 'number') %}
 	  			<!-- Set writeheaderbool = true -->
@@ -28,11 +28,13 @@
 					        <p> {{ course.description }}</p>
 		      			</li>
 		  			{% endif %}
-		  			{% if writecloserbool == true %}
-		  				</ul><!-- Close course list -->
+		  			
+	  			{% endfor %}
+	  			{% if writecloserbool == true %}
+		  				</ul>
+		  				</li><!-- Close course list -->
 		  				{% assign writecloserbool = false %}
 		  			{% endif %}
-	  			{% endfor %}
 	  			{% if writeheadbool == true %}
 	  				</ul>
 					</li>
@@ -58,11 +60,13 @@
 					        <p> {{ course.description }}</p>
 		      			</li>
 		  			{% endif %}
-		  			{% if writecloserbool == true %}
-		  				</ul><!-- Close course list -->
-		  				{% assign writecloserbool = false %}
-		  			{% endif %}
+		  			
 	  			{% endfor %}
+	  			{% if writecloserbool == true %}
+	  				</ul>
+	  				</li><!-- Close course list -->
+	  				{% assign writecloserbool = false %}
+	  			{% endif %}
 	  			{% if writeheadbool == true %}
 	  				</ul>
 					</li>
@@ -88,11 +92,13 @@
 					        <p> {{ course.description }}</p>
 		      			</li>
 		  			{% endif %}
-		  			{% if writecloserbool == true %}
-		  				</ul><!-- Close course list -->
-		  				{% assign writecloserbool = false %}
-		  			{% endif %}
+		  			
 	  			{% endfor %}
+	  			{% if writecloserbool == true %}
+	  				</ul>
+	  				</li><!-- Close course list -->
+	  				{% assign writecloserbool = false %}
+	  			{% endif %}
 	  			{% if writeheadbool == true %}
 	  				</ul>
 					</li>
