@@ -1,7 +1,7 @@
 ---
 name: Will Yurman
 titles: [Faculty]
-bio:
+email: why1@psu.edu
 image-url: ../assets/img/will_yurman_mug.jpg
 lead-faculty: 0
 published: yes

@@ -1,7 +1,7 @@
 ---
 name: Greg O'Toole
 titles: [Faculty]
-bio:
+email: gto1@psu.edu
 image-url: ../assets/img/greg_brain.jpg
 lead-faculty: 0
 published: yes

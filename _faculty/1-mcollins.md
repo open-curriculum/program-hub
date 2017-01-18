@@ -1,7 +1,7 @@
 ---
 name: Michael Collins
 titles: [Faculty]
-bio:
+email: msc227@psu.edu
 image-url: ../assets/img/collins-mug.jpg
 lead-faculty: 0
 published: yes
