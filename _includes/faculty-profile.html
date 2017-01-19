@@ -5,7 +5,9 @@
         	<img class="thumbnail" src="{{ member.image-url }}" />
       	</div>
       	<div class="small-12 medium-9 large-8 columns">
-        <h3>{{ member.name }}</h3>
-        <p>{{ member.bio }}</p>
+	        <h3>{{ member.name }}</h3>
+	        <p><strong>E-Mail: </strong>{{ member.email }}</p>
+	        <p>{{ member.content }}</p>
+        </div>
 </div> 
 {% endfor %}
