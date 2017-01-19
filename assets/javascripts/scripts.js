@@ -34,8 +34,8 @@ $(window).load(function(){
     //   e.preventDefault();
     // });
 
-    $('#pathways-panel [data-tabs]').on('click', function(e) {
-    	var activeID = $("#pathways-panel li.tabs-title.is-active").find("a").attr("href");
+    $('#pathways-panel [data-tabs] li').on('click', function(e) {
+    	var activeID = $(this).attr("id");
         alert(activeID);
         $('div[id="' + activeID + '"]').addClass( 'is-active' );
         e.preventDefault();
