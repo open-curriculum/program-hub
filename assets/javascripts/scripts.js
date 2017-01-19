@@ -34,9 +34,11 @@ $(window).load(function(){
     //   e.preventDefault();
     // });
 
-    $('#pathways-panel [data-tabs]').on('change.zf.tabs', function() {
+    $('#pathways-panel [data-tabs]').on('click', function(e) {
     	var activeID = $("#pathways-panel li.tabs-title.is-active").find("a").attr("href");
-    	$('div[id="' + activeID + '"]').toggleClass( 'is-active' );
+        alert(activeID);
+        $('div[id="' + activeID + '"]').addClass( 'is-active' );
+        e.preventDefault();
 	});
 
 	// if (tabID == activeID) {

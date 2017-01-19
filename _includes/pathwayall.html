@@ -4,8 +4,6 @@
     	<!--this stupid part is being stupid... -->
 	    
     	{% for pathway in site.pathways %}
-    	<li class="accordion-group-tab">
-	        <a href="#{{ pathway.title | slugify }}">{{ pathway.title }} </a> 
 	          <ul class="menu vertical nested">
 	  			{% assign sorted = (site.courses | sort: 'number') %}
 	  			<!-- Set writeheaderbool = true -->
@@ -18,58 +16,54 @@
 					        <p> {{ course.description }}</p>
 		      			</li>
 		  			{% endif %}
+		  			
 	  			{% endfor %}
 	  			{% if writecloserbool == true %}
 		  				</ul>
-		  				</li><!-- Close course list -->
 		  				{% assign writecloserbool = false %}
 		  			{% endif %}
 	  			{% if writeheadbool == true %}
 	  				</ul>
-					</li>
 				{% endif %}
 
 	  			<!-- Set writeheaderbool = true -->
   				{% assign writeheaderbool = true %}
 	  			{% for course in sorted %}
 		  			{% if course.pathway-list contains pathway.title and course.number contains 'COMM' %}
-		  			<!-- Check if writeheaderbool is true -->
 		  				<li>
 					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
 					        <h4> {{ course.title }} </h4>
 					        <p> {{ course.description }}</p>
 		      			</li>
 		  			{% endif %}
+		  			
 	  			{% endfor %}
 	  			{% if writecloserbool == true %}
 		  				</ul>
-		  				</li><!-- Close course list -->
 		  				{% assign writecloserbool = false %}
 		  			{% endif %}
 	  			{% if writeheadbool == true %}
 	  				</ul>
-					</li>
 				{% endif %}
+
 	  			<!-- Set writeheaderbool = true -->
   				{% assign writeheaderbool = true %}
 	  			{% for course in sorted %}
 		  			{% if course.pathway-list contains pathway.title and course.number contains 'IST' %}
-		  			<!-- Check if writeheaderbool is true -->
 		  				<li>
 					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
 					        <h4> {{ course.title }} </h4>
 					        <p> {{ course.description }}</p>
 		      			</li>
 		  			{% endif %}
+		  			
 	  			{% endfor %}
 	  			{% if writecloserbool == true %}
 		  				</ul>
-		  				</li><!-- Close course list -->
 		  				{% assign writecloserbool = false %}
 		  			{% endif %}
 	  			{% if writeheadbool == true %}
 	  				</ul>
-					</li>
 				{% endif %}
 			</ul>
 			</li>
