@@ -1,18 +1,30 @@
 <!-- ACCORDION -->
+
 <div class="accordion-group">
     <ul class="vertical menu" data-accordion-menu data-multi-expand="false">
     	<!--this stupid part is being stupid... -->
 	    
     	{% for pathway in site.pathways %}
+
     	<li class="accordion-group-tab">
+    	
 	        <a href="#{{ pathway.title | slugify }}">{{ pathway.title }} </a> 
 	          <ul class="menu vertical nested">
+	          <li class="courseFilter">
+                   
+                       <a href="#" data-filter="*" class="current">All Courses</a>
+                       <a href="#" data-filter=".art">ART</a>
+                       <a href="#" data-filter=".comm">COMM</a>
+                       <a href="#" data-filter=".ist">IST</a>
+                   
+			</li>
+			<div class="courseContainer">
 	  			{% assign sorted = (site.courses | sort: 'number') %}
 	  			<!-- Set writeheaderbool = true -->
   				{% assign writeheaderbool = true %}
 	  			{% for course in sorted %}
 		  			{% if course.pathway-list contains pathway.title and course.number contains 'ART' %}
-		  				<li id="art">
+		  				<li class="art">
 					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
 					        <h4> {{ course.title }} </h4>
 					        <p> {{ course.description }}</p>
@@ -20,6 +32,7 @@
 		  			{% endif %}
 	  			{% endfor %}
 	  			{% if writecloserbool == true %}
+	  			</div> <!-- course container -->
 		  				</ul>
 		  				</li><!-- Close course list -->
 		  				{% assign writecloserbool = false %}
@@ -34,7 +47,7 @@
 	  			{% for course in sorted %}
 		  			{% if course.pathway-list contains pathway.title and course.number contains 'COMM' %}
 		  			<!-- Check if writeheaderbool is true -->
-		  				<li id="comm">
+		  				<li class="comm">
 					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
 					        <h4> {{ course.title }} </h4>
 					        <p> {{ course.description }}</p>
@@ -55,7 +68,7 @@
 	  			{% for course in sorted %}
 		  			{% if course.pathway-list contains pathway.title and course.number contains 'IST' %}
 		  			<!-- Check if writeheaderbool is true -->
-		  				<li id="ist">
+		  				<li class="ist">
 					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
 					        <h4> {{ course.title }} </h4>
 					        <p> {{ course.description }}</p>
