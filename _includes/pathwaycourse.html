@@ -12,7 +12,7 @@
   				{% assign writeheaderbool = true %}
 	  			{% for course in sorted %}
 		  			{% if course.pathway-list contains pathway.title and course.number contains 'ART' %}
-		  				<li>
+		  				<li id="art">
 					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
 					        <h4> {{ course.title }} </h4>
 					        <p> {{ course.description }}</p>
@@ -34,7 +34,7 @@
 	  			{% for course in sorted %}
 		  			{% if course.pathway-list contains pathway.title and course.number contains 'COMM' %}
 		  			<!-- Check if writeheaderbool is true -->
-		  				<li>
+		  				<li id="comm">
 					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
 					        <h4> {{ course.title }} </h4>
 					        <p> {{ course.description }}</p>
@@ -55,7 +55,7 @@
 	  			{% for course in sorted %}
 		  			{% if course.pathway-list contains pathway.title and course.number contains 'IST' %}
 		  			<!-- Check if writeheaderbool is true -->
-		  				<li>
+		  				<li id="ist">
 					        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
 					        <h4> {{ course.title }} </h4>
 					        <p> {{ course.description }}</p>

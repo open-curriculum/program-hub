@@ -36,7 +36,7 @@ $(window).load(function(){
 
     $('#pathways-panel [data-tabs] li').on('click', function(e) {
     	var activeID = $(this).attr("id");
-        alert(activeID);
+        console.log(activeID);
         $('div[id="' + activeID + '"]').addClass( 'is-active' );
         e.preventDefault();
 	});

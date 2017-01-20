@@ -135,34 +135,9 @@ http://www.worldcampus.psu.edu/degrees-and-certificates/penn-state-online-digita
             </div>
         </div>
         <div class="tabs-panel" id="pathways-panel">
-
-
-            <div class="row collapse">
-
-            
-
-                <div class="medium-3 columns">
-                    <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
-                    {% for pathway in site.pathways %}
-                    <li class="tabs-title" id="{{ pathway.title }}">
-                        <a href="#{{ pathway.title | slugify }}" aria-selected="true">{{ pathway.title }}</a>
-                    </li>
-                    {% endfor %}
-                    </ul>
-                </div>
-
-                <div class="medium-9 columns"> 
-                    <!--This is where the pathway stuff will go: if sort is true then load x sheet-->
-                    <ul class="tabs horizontal" id="example-horiz-tabs" data-tabs>
-                    {% for sort in site.sorts %}
-                    <li class="tabs-button medium-2 columns" id="{{ sort.title }}">
-                      <button type="button" value="{{ sort.title }}">{{ sort.title }}</button>
-                    </li>
-                    {% endfor %}
-                    {% include pathwayall.html %}
-                    </ul>
-                </div>
-            </div>
+            <h2 class="callout-heading">Pathways</h2>
+            {% include pathwaycourse.html %}
+            <!-- </ul> -->
         </div>
     </div>
 </div>
