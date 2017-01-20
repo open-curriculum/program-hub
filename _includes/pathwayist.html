@@ -4,8 +4,6 @@
     	<!--this stupid part is being stupid... -->
 	    
     	{% for pathway in site.pathways %}
-    	<li class="accordion-group-tab">
-	        <a href="#{{ pathway.title | slugify }}">{{ pathway.title }} </a> 
 	          <ul class="menu vertical nested">
 	  			{% assign sorted = (site.courses | sort: 'number') %}
 	  			<!-- Set writeheaderbool = true -->
@@ -28,7 +26,6 @@
 	  				</ul>
 				{% endif %}
 			</ul>
-			</li>
 		{% endfor %}
 		</li>
 	</ul>
