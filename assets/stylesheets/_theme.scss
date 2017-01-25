@@ -509,6 +509,9 @@ svg#lattice-paths {
 }
 .accordion-group ul.vertical.menu.nested {
 	border-bottom: 0;
+	@media #{$small-only} {
+		margin:0;
+	}
 }
 .accordion-group .menu.nested>li {
     padding: 1rem;
@@ -586,6 +589,9 @@ li#courseFilter {
 	padding:1rem 0 2rem 0;
 	align-items: center;
 	justify-content: center;
+	@media #{$small-only} {
+		display: flex;
+	}
 	a.current {
     	background: #ff5722;
     	color: #fff;
@@ -598,6 +604,9 @@ li#courseFilter {
 	    font-weight: 600;
 	    border-bottom: 2px solid #ff5722;
 	    border-top: 2px solid #ff5722;
+	    @media #{$small-only} {
+			padding: 1rem 0.75rem;
+		}
 	    &:last-of-type{
 	    	border-radius: 0px 4px 4px 0px;
 	    	-webkit-border-radius: 0px 4px 4px 0px; 
