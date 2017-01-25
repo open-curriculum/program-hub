@@ -61,7 +61,7 @@ $(document).foundation();
 
     $win.on('load', function(){
         // document is fully loaded
-        $( "#pathway-accordion li.accordion-group-tab" ).click(function(){
+        $( "#pathway-accordion li.accordion-group-tab, #curriculum-accordion li.accordion-group-tab" ).click(function(){
 
                 var $container = $('.courseContainer');
 

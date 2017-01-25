@@ -1,12 +1,12 @@
 {% assign sorted = (site.faculty | sort:'lead-faculty') %}
 {% for member in sorted %}
-<div class="row">    
+<div class="row faculty">    
 		<div class="small-12 medium-3 large-4 columns">
         	<img class="thumbnail" src="{{ member.image-url }}" />
       	</div>
       	<div class="small-12 medium-9 large-8 columns">
 	        <h3>{{ member.name }}</h3>
-	        <p><strong>E-Mail: </strong>{{ member.email }}</p>
+	        <p class="faculty-email"><strong>E-Mail: </strong>{{ member.email }}</p>
 	        <p>{{ member.content }}</p>
         </div>
 </div> 
