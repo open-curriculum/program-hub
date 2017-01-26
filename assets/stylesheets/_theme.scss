@@ -607,6 +607,9 @@ li#courseFilter {
 	    border-top: 2px solid #ff5722;
 	    @media #{$small-only} {
 			padding: 1rem 0.75rem;
+			justify-content: center;
+    		align-items: center;
+   			height: 4rem;
 		}
 	    &:last-of-type{
 	    	border-radius: 0px 4px 4px 0px;
