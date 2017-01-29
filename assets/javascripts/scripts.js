@@ -63,37 +63,36 @@ $(document).foundation();
         // document is fully loaded
         $( "#pathway-accordion li.accordion-group-tab, #curriculum-accordion li.accordion-group-tab" ).click(function(){
 
-                var $container = $('.courseContainer');
+            var $container = $('.courseContainer');
 
-                    $container.isotope({
-                        filter: '*',
-                        layoutMode: 'fitRows',
-                        itemSelector: '.course-item',
-                        animationOptions: {
-                            duration: 750,
-                            easing: 'linear',
-                            queue: false
-                        }
-                    });
+                $container.isotope({
+                    filter: '*',
+                    layoutMode: 'fitRows',
+                    itemSelector: '.course-item',
+                    animationOptions: {
+                        duration: 750,
+                        easing: 'linear',
+                        queue: false
+                    }
+                });
 
 
-                    $('#courseFilter a').click(function(){
-                    $('#courseFilter .current').removeClass('current');
-                    $(this).addClass('current');
-             
-                    var selector = $(this).attr('data-filter');
-                    $container.isotope({
-                        filter: selector,
-                        animationOptions: {
-                            duration: 750,
-                            easing: 'linear',
-                            queue: false
-                        }
-                     });
-                     return false;
-                }); 
-            });
-        
+                $('#courseFilter a').click(function(){
+                $('#courseFilter .current').removeClass('current');
+                $(this).addClass('current');
+         
+                var selector = $(this).attr('data-filter');
+                $container.isotope({
+                    filter: selector,
+                    animationOptions: {
+                        duration: 750,
+                        easing: 'linear',
+                        queue: false
+                    }
+                 });
+                 return false;
+            }); 
+        });
     });
     
 })(jQuery);
