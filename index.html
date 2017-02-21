@@ -12,8 +12,6 @@ faculty_heading: Our Experts. Your Faculty.
   <div class="row">
     <div class="top-bar">
       <div class="top-bar-title">
-          <!-- <a class="shield" href="http://psu.edu"><img alt="The Penn State University Sheild" src="../assets/img/psu_arch_shield_blue.svg"/></a>
-          <a class="masthead" href="/"><img alt="The College of Arts and Architecture Masthead" src="../assets/img/psu_arch_masthead_blue.svg"/></a> -->
           <a class="masthead" href="/"><img alt="The Pennsylvania State University" src="assets/img/psu_shield.svg"/></a>
 
     <span data-responsive-toggle="responsive-menu" data-hide-for="medium" class="menu-button">
@@ -39,9 +37,7 @@ faculty_heading: Our Experts. Your Faculty.
               <li class="apply-topbar-button"><a href="
 http://www.worldcampus.psu.edu/degrees-and-certificates/penn-state-online-digital-multimedia-design-bachelors-degree/overview" target="_blank">Apply</a></li>
               <!-- <li><a href="#"><i class="fa fa-search"></i></a></li> -->
-
             </ul>
-
           </div>
         <!-- </div> -->
       </div>
@@ -58,14 +54,6 @@ http://www.worldcampus.psu.edu/degrees-and-certificates/penn-state-online-digita
       </div>
   </div>
   <!-- END ROW -->
-
-  <!-- APPLY ROW -->
-  <!-- <div class="row apply-button-row">
-    <div class="small-8 small-centered medium-6 large-6 columns">
-      <a class="expanded button" href="#">Apply Now</a>
-    </div>
-  </div> -->
-
 </div>
 <!-- END SVG HEADER -->
 
@@ -101,9 +89,9 @@ http://www.worldcampus.psu.edu/degrees-and-certificates/penn-state-online-digita
     </div>
     <div class="small-12 columns">
       <ul class="pagination" role="navigation" aria-label="Pagination">
-        <li><a href="/program-hub/program/" class="circle-blue" aria-label="DD">DD</a></li>
-        <li><a href="/program-hub/program/" class="circle-red" aria-label="ViP">ViP</a></li>
-        <li><a href="/program-hub/program/" class="circle-green" aria-label="IxD">IxD</a></li>
+        <li><a href="{{ post.url | prepend: site.baseurl }}/program/" class="circle-blue" aria-label="DD">DD</a></li>
+        <li><a href="{{ post.url | prepend: site.baseurl }}/program/" class="circle-red" aria-label="ViP">ViP</a></li>
+        <li><a href="{{ post.url | prepend: site.baseurl }}/program/" class="circle-green" aria-label="IxD">IxD</a></li>
       </ul>
     </div>
   </div>
@@ -114,28 +102,3 @@ http://www.worldcampus.psu.edu/degrees-and-certificates/penn-state-online-digita
     </div>
   </div>
 </div>
-<!-- END PATHS CALLOUT -->
-
-<!-- FACULTY ROW -->
-<!-- <div class="faculty-callout">
-  <div class="row" id="faculty">
-    <div class="small-12 columns">
-      <h2 class="callout-heading">{{ page.faculty_heading }}</h2>
-    </div>
-  </div>
-  <div class="row faculty-img-row">
-    <div class="small-12 medium-4 large-4 columns">
-      <img class="thumbnail" src="assets/img/will_yurman_mug_cropped.jpg" />
-      <h3>Will Yurman</h3>
-    </div>
-    <div class="small-12 medium-4 large-4 columns">
-      <img class="thumbnail" src="assets/img/collins-mug.jpg" />
-      <h3>Michael Collins</h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="small-12 small-centered medium-5 large-6 columns">
-      <a href="/program-hub/about/" class="button expanded">Meet the Faculty</a>
-    </div>
-  </div>
-</div> -->

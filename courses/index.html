@@ -1,0 +1,33 @@
+---
+layout: default
+title: Courses
+---
+<div class="row">
+{% assign items = site.courses | sort: 'number' %}
+{% for course in items %}
+	<div class="column small-12">
+	<hr>
+        <h3><a href="{{ course.bulletin-link }}"> {{ course.number }} </a></h3>
+        <h4> {{ course.title }} </h4>
+		{% if course.pre-req And course.pre-req != "" And course.pre-req != nil %}
+			<p>Pre-req(s): {% assign reqs = course.pre-req %}{% for req in reqs %}
+				<span class="highlight black">{{ req }}</span>
+			{% endfor %}
+			</p>
+		{% endif %}
+		{% if course.course-type And course.course-type != "" And course.course-type != nil %}
+			<p>Type: {% assign types = course.course-type %}{% for type in types %}
+				<span class="highlight black">{{ type }}</span>
+			{% endfor %}
+			</p>
+		{% endif %}
+		{% if course.credits And course.credits != "" And course.credits != nil %}
+			<p>credits: {{ course.credits }}
+			</p>
+		{% endif %}
+        <p> {{ course.description }}</p>
+        
+    </div>
+{% endfor %}
+</div>
+

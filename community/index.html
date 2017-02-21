@@ -1,0 +1,56 @@
+---
+layout: default
+title: Community
+---
+
+<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode -->
+<div class="community-header">
+  <!-- TOP BAR -->
+  <div class="row">
+    <div class="top-bar">
+      <div class="top-bar-title">
+          <a class="masthead" href="/"><img alt="The Pennsylvania State University" src="../assets/img/psu_shield.svg"/></a>
+    <span data-responsive-toggle="responsive-menu" data-hide-for="medium" class="menu-button">
+      <button class="menu-icon" type="button" data-toggle></button>
+    </span>
+      </div>
+      <div id="responsive-menu">
+        <!-- <div class="nav-container"> -->
+          <div class="top-bar-left"></div>
+          <div class="top-bar-right">
+            <ul class="menu">
+              {% for menuitem in site.menuitems %}
+              {% if menuitem.url == page.dir %}
+                  {% assign class = "active" %}
+              {% else %}
+                  {% assign class = "normal" %}
+              {% endif %}
+                  <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
+              {% endfor %}
+              <li class="apply-topbar-button"><a href="http://www.worldcampus.psu.edu/degrees-and-certificates/penn-state-online-digital-multimedia-design-bachelors-degree/overview" target="_blank">Apply</a></li>
+            </ul>
+          </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- END TOP BAR -->
+  <div class="row quote-row">
+    <div class="small-12 columns">
+      <h1 class="secondary-page-heading">{{ page.title }}</h1>
+    </div>
+    <div class="small-12 columns">
+      <h2 class="quote">Meet your people</h2>
+    </div>
+  </div>
+
+</div>
+<!-- END HEADER -->
+
+<!-- PATHWAYS -->
+<div class="row head-spacing foot-spacing">
+  <div class="small-12 columns">
+        <h2 class="callout-heading">Community</h2>
+        <p>Join the DMD Slack Group here: <a href="http://dmd-psu.slack.com">dmd-psu.slack.com <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+  </div>
+</div>
