@@ -28,6 +28,12 @@
 		  				<li class="course-item art">
 					        <h3> {{ course.number }} </h3>
 					        <h4> {{ course.title }} </h4>
+					        {% if course.course-type And course.course-type != "" And course.course-type != nil %}
+								<p>Type: {% assign types = course.course-type %}{% for type in types %}
+									<span class="highlight black">{{ type }}</span>
+								{% endfor %}
+								</p>
+							{% endif %}
 					        <p>{{ course.description }}<p>
 					        <p><a href="{{ course.bulletin-link }}" target="_blank">Course Description <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
 		      			</li>
@@ -54,6 +60,12 @@
 		  				<li class="course-item comm">
 					        <h3>{{ course.number }} </h3>
 					        <h4> {{ course.title }} </h4>
+					        {% if course.course-type And course.course-type != "" And course.course-type != nil %}
+								<p>Type: {% assign types = course.course-type %}{% for type in types %}
+									<span class="highlight black">{{ type }}</span>
+								{% endfor %}
+								</p>
+							{% endif %}
 					        <p> {{ course.description }}</p>
 					        <p><a href="{{ course.bulletin-link }}" target="_blank">Course Description <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
 		      			</li>
@@ -78,6 +90,12 @@
 		  				<li class="course-item ist">
 					        <h3>{{ course.number }} </h3>
 					        <h4> {{ course.title }} </h4>
+					        {% if course.course-type And course.course-type != "" And course.course-type != nil %}
+								<p>Type: {% assign types = course.course-type %}{% for type in types %}
+									<span class="highlight black">{{ type }}</span>
+								{% endfor %}
+								</p>
+							{% endif %}
 					        <p> {{ course.description }}</p>
 					        <p><a href="{{ course.bulletin-link }}" target="_blank">Course Description <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
 		      			</li>
@@ -93,6 +111,9 @@
 	  				</ul>
 					</li>
 				{% endif %}
+
+
+				
 			</ul>
 			</li>
 		{% endfor %}

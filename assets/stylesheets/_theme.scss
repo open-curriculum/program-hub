@@ -43,6 +43,9 @@ h3{
 .head-spacing {
 	padding-top: 10vh;
 }
+.foot-spacing {
+	padding-bottom: 10vh;
+}
 .animated-pulsing {
 	animation: pulsing 0.1s infinite;
 }
@@ -170,6 +173,7 @@ span.highlight{
 	word-wrap: break-word;
 	padding: 0 0.5rem;
 	text-transform: uppercase;
+	background:#000;
 	&.black {
 		background:#212121;
 	}
