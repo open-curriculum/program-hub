@@ -9,6 +9,18 @@ site_url:           dmd.psu.edu
 site_email:         dmd@psu.edu
 site_phone:         
 
+# Collections 
+collections:
+  courses:
+  pathways:
+  faculty:
+  sorts:
+# Assets
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          ./assets/stylesheets
+  style:            :compressed
+
 #Navigation
 menuitems:
   - url: /
