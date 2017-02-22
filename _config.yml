@@ -74,3 +74,5 @@ menuitems:
     title: Program
   - url: /program-hub/about/
     title: About
+  - url: /program-hub/community/
+    title: Community

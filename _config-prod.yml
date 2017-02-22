@@ -29,3 +29,5 @@ menuitems:
     title: Program
   - url: /about/
     title: About
+  - url: /program-hub/community/
+    title: Community
