@@ -2,8 +2,7 @@
 layout: default
 title: Digital Multimedia Design
 program_heading: The Program
-future_heading: Our Expertise. Your Future.
-faculty_heading: Our Experts. Your Faculty.
+future_heading: Three colleges, one program.
 ---
 
 <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode -->
@@ -13,34 +12,11 @@ faculty_heading: Our Experts. Your Faculty.
     <div class="top-bar">
       <div class="top-bar-title">
           <a class="masthead" href="/"><img alt="The Pennsylvania State University" src="assets/img/psu_shield.svg"/></a>
-
-    <span data-responsive-toggle="responsive-menu" data-hide-for="medium" class="menu-button">
-      <button class="menu-icon" type="button" data-toggle></button>
-    </span>
-
-
+        <span data-responsive-toggle="responsive-menu" data-hide-for="medium" class="menu-button">
+          <button class="menu-icon" type="button" data-toggle></button>
+        </span>
       </div>
-      <div id="responsive-menu">
-        <!-- <div class="nav-container"> -->
-          <div class="top-bar-left"></div>
-          <div class="top-bar-right">
-            <ul class="menu">
-              {% for menuitem in site.menuitems %}
-              {% if menuitem.url == page.dir %}
-                  {% assign class = "active" %}
-              {% else %}
-                  {% assign class = "normal" %}
-              {% endif %}
-                  <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
-              {% endfor %}
-              
-              <li class="apply-topbar-button"><a href="
-http://www.worldcampus.psu.edu/degrees-and-certificates/penn-state-online-digital-multimedia-design-bachelors-degree/overview" target="_blank">Apply</a></li>
-              <!-- <li><a href="#"><i class="fa fa-search"></i></a></li> -->
-            </ul>
-          </div>
-        <!-- </div> -->
-      </div>
+      {% include top-menu.html %}
     </div>
   </div>
   <!-- END TOP BAR -->
@@ -87,18 +63,13 @@ http://www.worldcampus.psu.edu/degrees-and-certificates/penn-state-online-digita
     <div class="small-12 columns">
       <h2 class="callout-heading">{{ page.future_heading }}</h2>
     </div>
-    <div class="small-12 columns">
-      <ul class="pagination" role="navigation" aria-label="Pagination">
-        <li><a href="{{ post.url | prepend: site.baseurl }}/program/" class="circle-blue" aria-label="DD">DD</a></li>
-        <li><a href="{{ post.url | prepend: site.baseurl }}/program/" class="circle-red" aria-label="ViP">ViP</a></li>
-        <li><a href="{{ post.url | prepend: site.baseurl }}/program/" class="circle-green" aria-label="IxD">IxD</a></li>
-      </ul>
+    <div class="small-12 medium-6 large-5 columns">
+      <p>Most programs take place within one college. The Digital Multimedia Design program expands access to a wider range of courses – those typically out of reach for students enrolled in one academic program. Our students take advanced level courses accross the College of Arts and Architecture, College of Communications, and College of IST making it the first interdisciplinary fully-online undergraduate program at Penn State University.</p>
     </div>
-  </div>
-  <div class="row">
+  
     <div class="small-12 columns design-your-path">
       <h3>DESIGN YOUR PATH</h3>
-      <a href="/program-hub/program" class="button">Pathways <i class="fa fa-random" aria-hidden="true"></i></a>
+      <a href="/program-hub/program" class="button">See pathways <i class="fa fa-random" aria-hidden="true"></i></a>
     </div>
-  </div>
+</div>
 </div>

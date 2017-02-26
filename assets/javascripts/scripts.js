@@ -69,11 +69,7 @@ $(document).foundation();
                     filter: '*',
                     layoutMode: 'fitRows',
                     itemSelector: '.course-item',
-                    animationOptions: {
-                        duration: 750,
-                        easing: 'linear',
-                        queue: false
-                    }
+                    stagger: 30
                 });
 
 
@@ -83,12 +79,7 @@ $(document).foundation();
          
                 var selector = $(this).attr('data-filter');
                 $container.isotope({
-                    filter: selector,
-                    animationOptions: {
-                        duration: 750,
-                        easing: 'linear',
-                        queue: false
-                    }
+                    filter: selector
                  });
                  return false;
             }); 

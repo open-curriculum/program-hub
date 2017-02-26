@@ -16,6 +16,7 @@
                        <a href="#" data-filter=".art" >ART</a>
                        <a href="#" data-filter=".comm" >COMM</a>
                        <a href="#" data-filter=".ist" >IST</a>
+                       <a href="#" data-filter=".other" >Other</a>
                    
 			</li>
 			<div class="courseContainer">
@@ -30,7 +31,7 @@
 					        <h4> {{ course.title }} </h4>
 					        {% if course.course-type And course.course-type != "" And course.course-type != nil %}
 								<p>Type: {% assign types = course.course-type %}{% for type in types %}
-									<span class="highlight black">{{ type }}</span>
+									<span class="highlight {{ type | slugify }}">{{ type }}</span>
 								{% endfor %}
 								</p>
 							{% endif %}
@@ -62,7 +63,7 @@
 					        <h4> {{ course.title }} </h4>
 					        {% if course.course-type And course.course-type != "" And course.course-type != nil %}
 								<p>Type: {% assign types = course.course-type %}{% for type in types %}
-									<span class="highlight black">{{ type }}</span>
+									<span class="highlight {{ type | slugify }}">{{ type }}</span>
 								{% endfor %}
 								</p>
 							{% endif %}
@@ -92,7 +93,7 @@
 					        <h4> {{ course.title }} </h4>
 					        {% if course.course-type And course.course-type != "" And course.course-type != nil %}
 								<p>Type: {% assign types = course.course-type %}{% for type in types %}
-									<span class="highlight black">{{ type }}</span>
+									<span class="highlight {{ type | slugify }}">{{ type }}</span>
 								{% endfor %}
 								</p>
 							{% endif %}
@@ -113,7 +114,37 @@
 				{% endif %}
 
 
-				
+				<!-- Set writeheaderbool = true -->
+  				{% assign writeheaderbool = true %}
+	  			{% for course in sorted %}
+		  			{% if course.pathway-list contains pathway.title and course.academic-home contains 'other' %}
+		  			<!-- Check if writeheaderbool is true -->
+		  			
+		  				<li class="course-item other">
+					        <h3>{{ course.number }} </h3>
+					        <h4> {{ course.title }} </h4>
+					        {% if course.course-type And course.course-type != "" And course.course-type != nil %}
+								<p>Type: {% assign types = course.course-type %}{% for type in types %}
+									<span class="highlight {{ type | slugify }}">{{ type }}</span>
+								{% endfor %}
+								</p>
+							{% endif %}
+					        <p> {{ course.description }}</p>
+					        <p><a href="{{ course.bulletin-link }}" target="_blank">Course Description <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+		      			</li>
+		      		
+		  			{% endif %}
+	  			{% endfor %}
+	  			{% if writecloserbool == true %}
+		  				</ul>
+		  				</li><!-- Close course list -->
+		  				{% assign writecloserbool = false %}
+		  			{% endif %}
+	  			{% if writeheadbool == true %}
+	  				</ul>
+					</li>
+				{% endif %}
+
 			</ul>
 			</li>
 		{% endfor %}

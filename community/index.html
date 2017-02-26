@@ -14,24 +14,7 @@ title: Community
       <button class="menu-icon" type="button" data-toggle></button>
     </span>
       </div>
-      <div id="responsive-menu">
-        <!-- <div class="nav-container"> -->
-          <div class="top-bar-left"></div>
-          <div class="top-bar-right">
-            <ul class="menu">
-              {% for menuitem in site.menuitems %}
-              {% if menuitem.url == page.dir %}
-                  {% assign class = "active" %}
-              {% else %}
-                  {% assign class = "normal" %}
-              {% endif %}
-                  <li class="{{ class }}"><a href="{{ menuitem.url }}">{{ menuitem.title }}</a></li>
-              {% endfor %}
-              <li class="apply-topbar-button"><a href="http://www.worldcampus.psu.edu/degrees-and-certificates/penn-state-online-digital-multimedia-design-bachelors-degree/overview" target="_blank">Apply</a></li>
-            </ul>
-          </div>
-        <!-- </div> -->
-      </div>
+     {% include top-menu.html %}
     </div>
   </div>
   <!-- END TOP BAR -->
