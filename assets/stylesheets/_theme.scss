@@ -519,6 +519,9 @@ svg#lattice-paths {
 .accordion-group{
 	margin-top: 10vh;
 	margin-bottom: 10vh;
+	.menu.nested {
+		margin-left:0;
+	}
 }
 .accordion-group ul.vertical.menu {
 	border-bottom: 1px solid #bdbdbd;
