@@ -46,17 +46,27 @@ h3{
 .foot-spacing {
 	padding-bottom: 10vh;
 }
-.animated-pulsing {
-	animation: pulsing 0.1s infinite;
+// .animated-pulsing {
+// 	animation: pulsing 0.1s infinite;
+// }
+// @keyframes pulsing {
+//   0%, 100% {
+//     opacity: 1;
+//   }
+//   50% {
+//     opacity: 0.98;
+//   }
+// }
+.svg-header #trilattice .a {
+	fill: #fff;
+	fill-opacity:0;
+    transition-duration: 3s;
+	&:hover {
+		fill-opacity:1;
+        transition-duration: 0.2s;
+	}
 }
-@keyframes pulsing {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.98;
-  }
-}
+
 //// Animation TOO PROCESSOR INTENSIVE!
 // .svg-header #trilattice .a {
 //   animation: polygon 100s infinite ease-in-out;
@@ -236,7 +246,16 @@ span.highlight{
 	    }
 	}
 }
-
+// pathways svg
+#pathways-svg, #core-svg {
+	margin: 1rem 0 1.5rem;
+	text-align: center;
+	height: 12rem;
+	width:auto;
+	@media #{$small-only} {
+		height: 8rem;
+	}
+}
 // HEADER TRILATTICE SVG
 .svg-header #trilattice .a {
 	stroke: #ffffff;
