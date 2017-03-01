@@ -18,7 +18,7 @@ collections:
 # Assets
 # We specify the directory for Jekyll so we can use @imports.
 sass:
-  sass_dir:          ./assets/stylesheets
+  sass_dir:          assets/stylesheets
   style:            :compressed
 
 #Navigation
@@ -29,5 +29,5 @@ menuitems:
     title: Program
   - url: /about/
     title: About
-  - url: /program-hub/community/
+  - url: /community/
     title: Community
