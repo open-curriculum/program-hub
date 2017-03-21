@@ -15,6 +15,11 @@ h1, h2, h3, h4, h5, h6{
 }
 p {
 	font-weight: 300;
+	a {
+		font-weight: 500;
+		// color: #ff5722;
+		text-decoration: underline;
+	}
 }
 strong {
 	font-weight: 500;
@@ -49,17 +54,6 @@ h3{
 .course-descr-message {
 	color: red;
 }
-// .animated-pulsing {
-// 	animation: pulsing 0.1s infinite;
-// }
-// @keyframes pulsing {
-//   0%, 100% {
-//     opacity: 1;
-//   }
-//   50% {
-//     opacity: 0.98;
-//   }
-// }
 .svg-header #trilattice .a {
 	fill: #fff;
 	fill-opacity:0;
@@ -69,103 +63,6 @@ h3{
         transition-duration: 0.2s;
 	}
 }
-
-//// Animation TOO PROCESSOR INTENSIVE!
-// .svg-header #trilattice .a {
-//   animation: polygon 100s infinite ease-in-out;
-// }
-// .callout-heading:after{
-//   animation: callout 100s infinite ease-in-out;
-// }
-// input.button, .top-bar li.apply-topbar-button a, .footer {
-//   animation: button 100s infinite ease-in-out;
-// }
-// .footer a.expanded.button {
-//   animation: button2 60s infinite ease-in-out;
-// }
-// .footer a.expanded.button:hover {
-//   animation: button3 60s infinite ease-in-out;
-// }
-// $color-1:#333333; //charcoal
-// $color-2:#81D4FA; //blue
-// $color-3:#fb8c00; //orange
-// $color-4:#cddc39; //green-yellow
-
-// @keyframes polygon {
-//   0%, 100% {
-//     stroke: $color-1;
-//   }
-//   20%, 80% {
-//     stroke: $color-2;
-//   }
-//   40% {
-//     stroke: $color-3;
-//   }
-//   60% {
-//     stroke: $color-4;
-//   }
-// }
-// @keyframes callout {
-//   0%, 100% {
-//     border-color:$color-1;
-//   }
-//   20%, 80% {
-//     border-color:$color-2;
-//   }
-//   40% {
-//     border-color:$color-3;
-//   }
-//   60% {
-//     stroke: $color-4;
-//   }
-// }
-// @keyframes button {
-//   0%, 100% {
-//     background-color:$color-1;
-//   }
-//   20%, 80% {
-//     background-color:$color-2;
-//   }
-//   40% {
-//     background-color:$color-3;
-//   }
-//   60% {
-//     background-color: $color-4;
-//   }
-// }
-// @keyframes button2 {
-//   0%, 100% {
-//     border-color:$color-1;
-//   }
-//   20%, 80% {
-//     border-color:$color-2;
-//   }
-//   40% {
-//     border-color:$color-3;
-//   }
-//   60% {
-//     border-color: $color-4;
-//   }
-// }
-// @keyframes button3 {
-//   0%, 100% {
-//     background-color:$color-1;
-//     border-color:$color-1;
-//   }
-//   20%, 80% {
-//     background-color:$color-2;
-//     border-color:$color-2;
-//   }
-//   40% {
-//     background-color:$color-3;
-//     border-color:$color-3;
-//   }
-//   60% {
-//      background-color:$color-4;
-//     border-color:$color-4;
-//   }
-// }
-
 // Sticky header
 body {
 	font-family: "Roboto Mono", Consolas, Monospace;
@@ -322,28 +219,46 @@ svg#lattice-paths {
 	    }
 	}
 	.request{
-		.request-form{
-			background: $white;
-			padding: 1rem 1.5rem;
+		background: $white;
+		padding: 2.5rem 1.5rem;
+		@media #{$medium-only} {
+			padding: 0.85rem;
+		}
+		@media #{$small-only} {
+			margin-top: 1rem;
+		}
+		h3 {
+			font-style: normal;
+			font-weight: 500;
+			padding-right: 0;
+			margin-top: 0;
 			@media #{$medium-only} {
-				padding: 0.85rem;
-			}
-			@media #{$small-only} {
-				margin-top: 1rem;
-			}
-			h3{
-				font-style: normal;
-				padding-right: 0;
+				font-size: 1.25rem;
 				margin-top: 0;
-				@media #{$medium-only} {
-					font-size: 1.25rem;
-					margin-top: 0;
-				}
-			}
-			.button{
-				margin-bottom: 0;
 			}
 		}
+		// .request-form{
+		// 	background: $white;
+		// 	padding: 1rem 1.5rem;
+		// 	@media #{$medium-only} {
+		// 		padding: 0.85rem;
+		// 	}
+		// 	@media #{$small-only} {
+		// 		margin-top: 1rem;
+		// 	}
+		// 	h3{
+		// 		font-style: normal;
+		// 		padding-right: 0;
+		// 		margin-top: 0;
+		// 		@media #{$medium-only} {
+		// 			font-size: 1.25rem;
+		// 			margin-top: 0;
+		// 		}
+		// 	}
+		// 	.button{
+		// 		margin-bottom: 0;
+		// 	}
+		// }
 	}
 }
 
