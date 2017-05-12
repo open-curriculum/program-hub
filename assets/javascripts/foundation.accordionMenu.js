@@ -172,7 +172,7 @@
           e.stopImmediatePropagation();
         }
       });
-    });//.attr('tabindex', 0);
+    }).attr('tabindex', 0);
   };
   /**
    * Closes all panes of the menu.

@@ -587,12 +587,24 @@ li#courseFilter {
 }
 
 
+div.accordion-content{
+	padding: 0 !important;
+	border: 0 !important;
+	background-color: transparent !important;
+}
 
 
+// ul.accordion > li.accordion-group-tab.accordion-item {
 
-
-
-
+	a.accordion-title{
+		border-left: 0 !important;
+		border-right: 0 !important;
+		color: $black !important
+	}
+	a.accordion-title:hover, a.accordion-title:focus{
+		background-color: $white !important;
+	}
+// }
 
 
 
