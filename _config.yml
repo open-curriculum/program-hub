@@ -57,6 +57,8 @@ sass:
 collections:
   courses:
   pathways:
+  polygons:
+    output: true
   faculty:
   sorts:
  #  _   _     __      _______ _____       _______ _____ ____  _   _ 

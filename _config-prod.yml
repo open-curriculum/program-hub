@@ -13,6 +13,8 @@ site_phone:
 collections:
   courses:
   pathways:
+  polygons:
+    output: true
   faculty:
   sorts:
 # Assets
