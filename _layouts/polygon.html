@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="row head-spacing">
+<div class="small-12 medium-6 medium-push-3 columns center">
+  <a href="{{ site.baseurl }}/polygons/">Back to all Polygons</a>
+  <hr>
+  </div>
+</div>
+<div class="row head-spacing foot-spacing">
+  
+  <div class="small-12 medium-6 medium-push-3 columns center">
+    <h3 class="center-align"><a href="{{ page.permalink | prepend: site.baseurl }}"> {{ page.title }}</a></h3>
+    <img class="center-align" src="{{ page.img-url }}" width="200" />
+    <p> {{ content }}</p>
+    <a href="{{ page.issuer-url }}">Issue Badge</a>
+  </div>
+</div>

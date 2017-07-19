@@ -1,5 +1,21 @@
-
-
+// Helpers
+.dark {
+  background:#333333;
+}
+.center-align {
+  text-align: center;
+  margin: 0 auto;
+}
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
 //Math
 $header-height: 90vh;
 $main-accent-color:#ff5722;

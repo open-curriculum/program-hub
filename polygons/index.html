@@ -2,14 +2,44 @@
 layout: default
 title: DMD Polygons
 ---
-<div class="row">
+<div class="row dark expanded">
+    <div class="top-bar">
+        <div class="top-bar-title">
+            <a class="masthead" href="/"><img alt="The Pennsylvania State University" src="../assets/img/psu_shield.svg" /></a>
+            <span data-responsive-toggle="responsive-menu" data-hide-for="medium" class="menu-button">
+  <button class="menu-icon" type="button" data-toggle></button>
+</span>
+        </div>
+        {% include top-menu.html %}
+    </div>
+</div>
+<div class="row head-spacing foot-spacing">
+<div class="column small-12 medium-6 medium-push-3 center">
+<p>You found DMD Polygons. Way to go! This is under deveopment, but if you go to #polygons ask PolyBot for a polygon on Slack, she just might help you out.</p>
+</div>
+</div>
+<!-- 
+<div class="row ">
+<div class="video-wrapper">
+<video controls preload="auto">
+  <source src="../assets/video/digitaldesign_1.mp4"
+          type='video/mp4'/>
+</video>
+</div>
+</div> -->
+
 {% assign items = site.polygons %}
 {% for polygon in items %}
-    <div class="column small-12">
-    <hr>
-        <h3><a href="{{ site.baseurl }}{{ polygon.permalink }}"> {{ polygon.title }}</a></h3>
-        <img src="{{ polygon.img-url }}" width="200" />
-        <p> {{ polygon.description }}</p>
+<div class="row head-spacing foot-spacing">
+    
+    <div class="column small-12 medium-4 center">
+        <a  class="center-align" href="{{ polygon.permalink | prepend: site.baseurl }}"><img src="{{ polygon.img-url }}" width="200" /></a>
     </div>
-{% endfor %}
+    <div class="column small-12 medium-8">
+        <h3 class="show-for-medium"><a href="{{ polygon.permalink | prepend: site.baseurl }}"> {{ polygon.title }}</a></h3>
+        <h3 class="show-for-small-only center-align"><a href="{{ polygon.permalink | prepend: site.baseurl }}"> {{ polygon.title }}</a></h3>
+        <p> {{ polygon.content }}</p>
+    </div>
 </div>
+<hr>
+{% endfor %}
