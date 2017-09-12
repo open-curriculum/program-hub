@@ -1,0 +1,19 @@
+---
+layout: nil
+---
+
+    [
+    {% for course in site.courses %}
+        {
+          "title"    : "{{ course.title }}",
+          "number"    : "{{ course.number }}",
+          "academic-home"    : "{{ course.academic-home }}",
+          "pre-req"    : "{{ course.pre-req }}",
+          "course-type"    : "{{ course.course-type }}",
+          "description"    : "{{ course.description }}",
+          "bulletin-link"    : "{{ course.bulletin-link }}",
+          "pathway-list"    : "{{ course.pathway-list }}",
+          "url"     : "{{ course.url }}"
+        } {% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
+    ] 
