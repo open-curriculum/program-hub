@@ -1,12 +1,8 @@
 ---
 layout: default
 ---
-<div class="home">  
-  <h1 class="page-heading">Exhibitions</h1>
-     <div class="row">
-        <div class="col s12">
-
-    {% for project in site.projects %}
+{% assign items = site.projects %}
+    {% for project in items where project.exhibition == "exhibition 1%}
          <div class="col s6 {{ project.class }}">
          <div class="card medium hoverable z-depth-raised">
           <div class="card-image">
@@ -23,10 +19,4 @@ layout: default
         </div>
       </div>
     {% endfor %}
-
-
-
-
-        </div>
-    </div>
 

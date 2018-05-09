@@ -40,7 +40,7 @@ exclude:            [
 #ga_id:             ##-########-###
 site_name:          DMD
 site_description :  
-site_copyright:     Copyright (c) 2016
+site_copyright:     Copyright (c) 2018
 site_url:           http://www.open-curriculum.org/program-hub
 site_email:         
 site_phone:         
@@ -57,7 +57,11 @@ sass:
 collections:
   courses:
   pathways:
-  polygons:
+  exhibitions:
+    output: true
+  projects:
+    output: true
+    polygons:
     output: true
   faculty:
   sorts:
