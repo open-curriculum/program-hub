@@ -1,22 +1,11 @@
 ---
 layout: default
 ---
-{% assign items = site.projects %}
-    {% for project in items where project.exhibition == "exhibition 1%}
-         <div class="col s6 {{ project.class }}">
-         <div class="card medium hoverable z-depth-raised">
-          <div class="card-image">
-            <img src="{{ project.card-image-url }}">
-            <span class="card-title">{{ project.title }}</span>
-          </div>
-          <div class="card-content">
-            <p>{{ project.content }}</p>
-            
-          </div>
-          <div class="card-action">
-            <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
-          </div>
+<div class="home">  
+  <h1 class="page-heading">Exhibitions</h1>
+     <div class="row">
+        <div class="col s12">
+          {{content}}
         </div>
-      </div>
-    {% endfor %}
+    </div>
 

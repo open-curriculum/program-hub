@@ -1,11 +1,41 @@
 ---
+layout: default
 title: Example project
 card-image-url: http://via.placeholder.com/950x350
-class: DMD 400
+class: exhibition-01-project-theme
 exhibition: exhibition 01
 instructor: Michael Collins
 ---
+              <div class="row column">
+                <hr>
+                <a href="{{ site.baseurl }}/exhibitions/{{ page.exhibition | slugify }}">← Back  to {{ page.exhibition }}</a>
+                <hr>
+                <h1>Title of student project.</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
+              </div>
 
-<a href="{{ site.baseurl }}/exhibitions/{{ page.exhibition | slugify }}">← Back  to {{ exhibition }}</a>
-Project content...
-
+            <div class="row">
+                <div class="theme-left-col column small-12 medium-6 large-5">
+                    <p>Left column content</p>
+                </div>
+                <div class=" column small-12 medium-6 large-7">
+                    <div class="row small-up-2">
+                        <div class="column">
+                            <img class="thumbnail" src="http://placehold.it/1100x550">
+                            <h5>My Site</h5>
+                        </div>
+                        <div class="column">
+                            <img class="thumbnail" src="http://placehold.it/550x550">
+                            <h5>My Site</h5>
+                        </div>
+                        <div class="column">
+                            <img class="thumbnail" src="http://placehold.it/550x550">
+                            <h5>My Site</h5>
+                        </div>
+                        <div class="column">
+                            <img class="thumbnail" src="http://placehold.it/550x550">
+                            <h5>My Site</h5>
+                        </div>  
+                    </div>
+                </div>
+            </div>

@@ -1,10 +1,10 @@
 ---
+layout: default
 title: Example project 3
 card-image-url: http://via.placeholder.com/950x350
-class: DMD 400
+class: exhibition-02-project-theme
 exhibition: exhibition 02
 instructor: Michael Collins
 ---
 
-<a href="{{ site.baseurl }}/exhibitions/{{ page.exhibition | slugify }}">← Back  to {{ exhibition }}</a>
-Project content...
+{% include exhibition-project-page.html exhibition=page.exhibition exhibition-title=page.title %}
