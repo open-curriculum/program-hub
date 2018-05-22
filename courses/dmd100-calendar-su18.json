@@ -1,0 +1,24 @@
+---
+layout: nil
+---
+
+    [
+    {% for assignment in site.data.oer.dmd100-calendar-su18 %}
+        {
+          "lesson"              : "{{ assignment.lesson }}",
+          "lesson-name"         : "{{ assignment.lesson-name }}",
+          "assignment-name"     : "{{ assignment.assignment-name }}",
+          "week"                : "{{ assignment.week }}",
+          "due-date"            : "{{ assignment.due-date }}",
+          "due-time"            : "{{ assignment.due-time }}",
+          "available-date"      : "{{ assignment.available-date }}",
+          "assigned-date"       : "{{ assignment.assigned-date }}",
+          "assigned-time"       : "{{ assignment.assigned-time }}",
+          "points"              : "{{ assignment.points }}",
+          "assignment-doc-url"  : "{{ assignment.assignment-doc-url }}",
+          "dropbox-url"         : "{{ assignment.dropbox-url }}",
+          "description"         : "{{ assignment.description }}",
+          "rubric-url"          : "{{ assignment.rubric-url }}"
+        } {% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
+    ] 

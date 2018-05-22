@@ -1,0 +1,57 @@
+{% unless include.offerings == null %}
+<div class="row">
+    <div class="small-12 columns">
+        <h3>Offerings</h3>
+    </div>
+</div>
+    {% for cal in include.offerings %}
+        {% if forloop.first == true %}
+        <div class="row">
+            <div class="small-12 columns">
+                <ul class="tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" data-tabs id="deeplinked-tabs">
+                    
+                    {% if cal.current == true %}
+                    <li class="tabs-title is-active"><a href="#tab-{{ cal.id }}">{{ cal.name }}</a></li>
+                    {% else %}
+                    <li class="tabs-title"><a href="#tab-{{ cal.id }}">{{ cal.name }}</a></li>
+                    {% endif %}
+
+                    {% elsif forloop.last == true %}
+                    {% if cal.current == true %}
+                    <li class="tabs-title is-active"><a href="#tab-{{ cal.id }}">{{ cal.name }}</a></li>
+                    {% else %}
+                    <li class="tabs-title"><a href="#tab-{{ cal.id }}">{{ cal.name }}</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+        {% else %}
+        {% if cal.current == true %}
+        <li class="tabs-title is-active"><a href="#tab-{{ cal.id }}">{{ cal.name }}</a></li>
+        {% else %}
+        <li class="tabs-title"><a href="#tab-{{ cal.id }}">{{ cal.name }}</a></li>
+        {% endif %}
+        {% endif %}
+    {% endfor %}
+    
+    <div class="tabs-content" data-tabs-content="deeplinked-tabs">
+            {% for cal in include.offerings %}
+            
+            {% if cal.current == true %}
+                    <div class="tabs-panel is-active" id="tab-{{ cal.id }}">
+                            
+                            {% include weekly-course-schedule.html calendar-data=cal.data tab-id=cal.id cal-name=cal.name %}
+                    </div>
+            {% else %}
+                    <div class="tabs-panel" id="tab-{{ cal.id }}">
+                            
+                            {% include weekly-course-schedule.html calendar-data=cal.data cal-name=cal.name %}
+                    </div>
+            {% endif %}
+           
+            {% endfor %}
+          </div>
+ 
+   
+
+{% endunless %}

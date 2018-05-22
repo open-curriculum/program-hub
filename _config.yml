@@ -55,8 +55,6 @@ sass:
 
 # Collections 
 collections:
-  dmd-courses:
-    output: true
   courses:
     output: true
   pathways:

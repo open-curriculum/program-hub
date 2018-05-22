@@ -11,6 +11,7 @@ layout: nil
           "pre-req"    : "{{ course.pre-req }}",
           "course-type"    : "{{ course.course-type }}",
           "description"    : "{{ course.description }}",
+          "program"    : "{{ course.program }}",
           "bulletin-link"    : "{{ course.bulletin-link }}",
           "pathway-list"    : "{{ course.pathway-list }}",
           "url"     : "{{ course.url }}"
