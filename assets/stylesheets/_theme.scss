@@ -591,7 +591,12 @@ div.accordion-content{
 	padding: 0 !important;
 	border: 0 !important;
 	background-color: transparent !important;
+	&.course-schedule {
+		margin-left: 3.5rem;
+	}
 }
+    
+
 
 
 // ul.accordion > li.accordion-group-tab.accordion-item {
@@ -608,7 +613,9 @@ div.accordion-content{
 table.course-schedule {
 	font-size:0.75em;
 }
-
+.light-gray {
+	color:#757575;
+}
 
 
 
