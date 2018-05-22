@@ -1,0 +1,97 @@
+---
+layout: dmd-course
+title: DMD 100
+card-description: This is a dmd 100 course description
+display-mode: table
+calendar-data: dmd100-calendar-su18
+---
+
+<ul class="tabs" data-tabs id="example-tabs">
+    <li class="tabs-title is-active"><a href="#schedule-weeks" aria-selected="true">Weeks</a></li>
+    <li class="tabs-title"><a data-tabs-target="schedule-table" href="#schedule-table">Table</a></li>
+</ul>
+<div class="tabs-content" data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="schedule-weeks">
+
+
+                <ul class="accordion" data-accordion data-allow-all-closed="true" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" id="deeplinked-accordion">
+                        {% assign items_grouped = site.data.oer.[page.calendar-data] | group_by:'week' %}
+                            {% for group in items_grouped %}
+                                {% if forloop.first == true %}
+                                <li class="accordion-item is-active" data-accordion-item>
+                                {% else %}
+                                <li class="accordion-item" data-accordion-item>
+                                {% endif %}
+                                {% for date in group.items %}
+                                {% if forloop.first == true %}
+                                {% capture week_begin %}{{date.week-begin | date: "%B %-d, %Y" }}{% endcapture %}
+                                {% capture week_end %}{{date.week-end | date: "%B %-d, %Y" }}{% endcapture %}
+                                    {% capture week_range %}{{ week_begin }} - {{ week_end }}{% endcapture %}
+                                {% endif %}
+                                {% endfor %}
+                                <a href="#week-{{group.name | slugify}}" class="accordion-title">Week: {{group.name}}: {{week_range}}</a>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            
+
+
+
+
+                                <div class="accordion-content" data-tab-content id="week-{{group.name | slugify}}">
+                                {% for assignment in group.items %}
+                                    <p><a href="{{assignment.assignment-url}}">{{assignment.assignment-name}}</a><br><span>(<strong>Due:</strong> {{ assignment.due-date | date: "%A, %B %-d, %Y" }} by {{ assignment.due-time }})</span></p>
+                                {% endfor %}
+                            </div>
+                            </li>
+                            {%- endfor -%}
+                        </ul>
+
+        
+        </div>
+        <div class="tabs-panel" id="schedule-table">
+                <table class="course-schedule">
+                <tr>
+                        <th>Lesson</th>
+                        <th>Lesson Name</th> 
+                        <th>Assignment Name</th>
+                        <th>Week</th>
+                        <th>Due Date, Due Time</th>
+                        <th>Available Date, Available Time</th>
+                        <th>Assigned Date, Assigned Time</th>
+                        <th>Points</th>
+                        <th>Assignment Doc URL</th>
+                        <th>Dropbox URL</th>
+                        <th>Description</th>
+                        <th>Rubric</th>
+                    </tr>
+                    {%- for assignment in site.data.oer.dmd100-calendar-su18 -%}
+                    <tr>
+                        <td>{{ assignment.lesson }}</td>
+                        <td>{{ assignment.lesson-name }}</td>
+                        <td>{{ assignment.assignment-name }}</td>
+                        <td>{{ assignment.week }}</td>
+                        <td>{{ assignment.due-date }}, {{ assignment.due-time }}</td>
+                        <td>{{ assignment.available-date }}, {{ assignment.available-time }}</td>
+                        <td>{{ assignment.assigned-date }}, {{ assignment.assigned-time }}</td>
+                        <td>{{ assignment.points }}</td>
+                        <td>{{ assignment.assignment-doc-url }}</td>
+                        <td>{{ assignment.dropbox-url }}</td>
+                        <td>{{ assignment.description }}</td>
+                        <td>{{ assignment.rubric-url }}</td>
+                    </tr>
+                    {%- endfor -%}
+                </table>  
+
+        </div>
+        </div>
+    
+
+
+
+
+

@@ -55,13 +55,16 @@ sass:
 
 # Collections 
 collections:
+  dmd-courses:
+    output: true
   courses:
+    output: true
   pathways:
   exhibitions:
     output: true
   projects:
     output: true
-    polygons:
+  polygons:
     output: true
   faculty:
   sorts:
