@@ -1,20 +1,20 @@
 ---
-layout: nil
+layout: null
 ---
 
     [
     {% for course in site.courses %}
         {
-          "title"    : "{{ course.title }}",
-          "number"    : "{{ course.number }}",
-          "academic-home"    : "{{ course.academic-home }}",
-          "pre-req"    : "{{ course.pre-req }}",
-          "course-type"    : "{{ course.course-type }}",
-          "description"    : "{{ course.description }}",
-          "program"    : "{{ course.program }}",
-          "bulletin-link"    : "{{ course.bulletin-link }}",
-          "pathway-list"    : "{{ course.pathway-list }}",
-          "url"     : "{{ course.url }}"
+          "title"    : {{ course.title | jsonify  }},
+          "number"    : {{ course.number | jsonify  }},
+          "academic-home"    : "{{ course.academic-home | jsonify  }},
+          "pre-req"    : {{ course.pre-req | jsonify  }},
+          "course-type"    : {{ course.course-type | jsonify  }},
+          "description"    : {{ course.description | jsonify  }},
+          "program"    : {{ course.program | jsonify  }},
+          "bulletin-link"    : {{ course.bulletin-link | jsonify  }},
+          "pathway-list"    : {{ course.pathway-list | jsonify }},
+          "url"     : {{ course.url | jsonify  }}
         } {% if forloop.last %}{% else %},{% endif %}
     {% endfor %}
     ] 

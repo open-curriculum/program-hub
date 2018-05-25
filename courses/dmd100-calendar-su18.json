@@ -1,24 +1,24 @@
 ---
-layout: nil
+layout: null
 ---
 
     [
     {% for assignment in site.data.oer.dmd100-calendar-su18 %}
         {
-          "lesson"              : "{{ assignment.lesson }}",
-          "lesson-name"         : "{{ assignment.lesson-name }}",
-          "assignment-name"     : "{{ assignment.assignment-name }}",
-          "week"                : "{{ assignment.week }}",
-          "due-date"            : "{{ assignment.due-date }}",
-          "due-time"            : "{{ assignment.due-time }}",
-          "available-date"      : "{{ assignment.available-date }}",
-          "assigned-date"       : "{{ assignment.assigned-date }}",
-          "assigned-time"       : "{{ assignment.assigned-time }}",
-          "points"              : "{{ assignment.points }}",
-          "assignment-doc-url"  : "{{ assignment.assignment-doc-url }}",
-          "dropbox-url"         : "{{ assignment.dropbox-url }}",
-          "description"         : "{{ assignment.description }}",
-          "rubric-url"          : "{{ assignment.rubric-url }}"
+          "lesson"              : {{ assignment.lesson | jsonify }},
+          "lesson-name"         : {{ assignment.lesson-name | jsonify }},
+          "assignment-name"     : {{ assignment.assignment-name | jsonify }},
+          "week"                : {{ assignment.week | jsonify }},
+          "due-date"            : {{ assignment.due-date | jsonify }},
+          "due-time"            : {{ assignment.due-time | jsonify }},
+          "available-date"      : {{ assignment.available-date | jsonify }},
+          "assigned-date"       : {{ assignment.assigned-date | jsonify }},
+          "assigned-time"       : {{ assignment.assigned-time | jsonify }},
+          "points"              : {{ assignment.points | jsonify }},
+          "assignment-doc-url"  : {{ assignment.assignment-doc-url | jsonify }},
+          "dropbox-url"         : {{ assignment.dropbox-url | jsonify }},
+          "description"         : {{ assignment.description | jsonify }},
+          "rubric-url"          : {{ assignment.rubric-url | jsonify }}
         } {% if forloop.last %}{% else %},{% endif %}
     {% endfor %}
     ] 

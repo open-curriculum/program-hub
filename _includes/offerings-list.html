@@ -1,5 +1,5 @@
 {% unless include.offerings == null %}
-<div class="row">
+<div class="row head-spacing">
     <div class="small-12 columns">
         <h3>Offerings</h3>
     </div>
@@ -8,7 +8,7 @@
         {% if forloop.first == true %}
         <div class="row">
             <div class="small-12 columns">
-                <ul class="tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" data-tabs id="deeplinked-tabs">
+                <ul class="tabs offering-filters" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" data-tabs id="deeplinked-tabs">
                     
                     {% if cal.current == true %}
                     <li class="tabs-title is-active"><a href="#tab-{{ cal.id }}">{{ cal.name }}</a></li>

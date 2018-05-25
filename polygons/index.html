@@ -39,7 +39,7 @@ title: DMD Polygons
         <h3 class="show-for-medium"><a href="{{ polygon.permalink | prepend: site.baseurl }}"> {{ polygon.title }}</a></h3>
         <h3 class="show-for-small-only center-align"><a href="{{ polygon.permalink | prepend: site.baseurl }}"> {{ polygon.title }}</a></h3>
         <p> {{ polygon.content }}</p>
-        {% if polygon.award-criteria And polygon.award-criteria != "" And polygon.award-criteria != nil %}
+        {% if polygon.award-criteria != null %}
         <a href="{{ polygon.award-criteria }}" target="_blank"> View award criteria</a>
         {% endif %}
     </div>
