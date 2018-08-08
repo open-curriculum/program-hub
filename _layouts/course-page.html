@@ -40,6 +40,14 @@ layout: main
     {% endif %}
     </div>
 </div>
+<div class="row expanded">
+    <div class="columns small-8 small-push-2 foot-spacing head-spacing {{ page.class }}">
+    {% if page.micro-site-description != null %}
+    <h2>Course Description</h2>
+    <p>{{ page.micro-site-description }}</p>
+    {% endif %}
+    </div>
+</div>
 {% unless page.offerings == null %}
   {% include offerings-list.html offerings=page.offerings %}
 {% endunless %}

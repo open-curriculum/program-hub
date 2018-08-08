@@ -9,7 +9,7 @@
                         {% assign items = site.courses | where: "program", "dmd" | where: "academic-home", "Arts & Arch" | where: "program-core", true %}
                         {% for course in items %}
                         <li class="course-item">
-                            <h3><a href="{{ course.url | prepend: site.baseurl }}">{{ course.number }}</a></h3>
+                            <h3>{% if course.micro-site == true %}<a href="{{ course.url | prepend: site.baseurl }}">{% endif %}{{ course.number }}{% if course.micro-site == true %}</a>{% endif %}</h3>
                             <h4>{{course.title}}</h4>
                             <p><a href="{{course.bulletin-link}}">Bulletin</a></p>
                             <p>{{course.description}}</p>
@@ -31,7 +31,7 @@
                     {% for course in items %}
                     {% unless course.program contains "dmd" %}
                     <li class="course-item">
-                            <h3><a href="{{ course.url | prepend: site.baseurl }}">{{ course.number }}</a></h3>
+                            <h3>{% if course.micro-site == true %}<a href="{{ course.url | prepend: site.baseurl }}">{% endif %}{{ course.number }}{% if course.micro-site == true %}</a>{% endif %}</h3>
                             <h4>{{course.title}}</h4>
                             <p><a href="{{course.bulletin-link}}">Bulletin</a></p>
                             <p>{{course.description}}</p>
@@ -54,7 +54,7 @@
                             {% assign items = site.courses | where: "academic-home", "Comm" | where: "program-core", true %}
                             {% for course in items %}
                             <li class="course-item">
-                                    <h3><a href="{{ course.url | prepend: site.baseurl }}">{{ course.number }}</a></h3>
+                                    <h3>{% if course.micro-site == true %}<a href="{{ course.url | prepend: site.baseurl }}">{% endif %}{{ course.number }}{% if course.micro-site == true %}</a>{% endif %}</h3>
                                     <h4>{{course.title}}</h4>
                                     <p><a href="{{course.bulletin-link}}">Bulletin</a></p>
                                     <p>{{course.description}}</p>
@@ -75,7 +75,7 @@
                             {% assign items = site.courses | where: "academic-home", "IST" | where: "program-core", true %}
                             {% for course in items %}
                             <li class="course-item">
-                                    <h3><a href="{{ course.url | prepend: site.baseurl }}">{{ course.number }}</a></h3>
+                                    <h3>{% if course.micro-site == true %}<a href="{{ course.url | prepend: site.baseurl }}">{% endif %}{{ course.number }}{% if course.micro-site == true %}</a>{% endif %}</h3>
                                     <h4>{{course.title}}</h4>
                                     <p><a href="{{course.bulletin-link}}">Bulletin</a></p>
                                     <p>{{course.description}}</p>
