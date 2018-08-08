@@ -1,13 +1,13 @@
 # program-hub
 
 ## Default (Git Pages - Automatic when pushed to the repo)
-To manually build for git pages: ```jekyll build```
+To manually build for git pages: ```bundle exec jekyll build```
 
 ## Local Development
-To develop locally: ```jekyll serve```  
+To develop locally: ```bundle exec jekyll serve```  
 Follow instructions in terminal
 
 ## Production deployment
-To build for production: ```jekyll build --config=_config.yml,_config-prod.yml```
+To build for production: ```bundle exec jekyll build --config=_config.yml,_config-prod.yml```
 
-Note: ```jekyll serve``` fails to include both config files.
+Note: ```bundle exec jekyll serve``` fails to include both config files.
